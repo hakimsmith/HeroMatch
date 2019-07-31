@@ -1,5 +1,5 @@
 {
-  "name": "Parcel-frontend",
+  "name": "parcel-frontend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "index.html"
   },
   "keywords": [],
   "author": "",

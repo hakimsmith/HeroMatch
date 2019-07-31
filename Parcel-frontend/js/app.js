@@ -7,7 +7,6 @@ console.log("app.js");
 pageBuild();
 
 function pageBuild(){
-    console.log("page build");
     home();
     characterQuiz();
     
@@ -31,9 +30,25 @@ function characterQuiz(){
     })
 
     document.querySelector('#quiz').addEventListener('click', function(){
-        if(event.target.classList.contains('option')){
+        if(event.target.classList.contains('diffOption')){
             difficulty = event.target.value
             console.log(difficulty)
+            console.log(role)
+            console.log(subrole)
+        }
+
+        if(event.target.classList.contains('roleOption')){
+            role = event.target.value
+            console.log(difficulty)
+            console.log(role)
+            console.log(subrole)
+        }
+        
+        if(event.target.classList.contains('subRoleOption')){
+            subrole = event.target.value
+            console.log(difficulty)
+            console.log(role)
+            console.log(subrole)
         }
     })
 

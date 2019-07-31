@@ -10,8 +10,7 @@ namespace HeroMatch.Models
         public int CharacterId { get; set; }
         public string Name { get; set; }
         public string Image { get; set; }
-        public int Difficulty { get; set; }
-        public string Api { get; set; }
-        public string Video { get; set; }
+
+        public virtual int FilterId {get; set;}
     }
 }

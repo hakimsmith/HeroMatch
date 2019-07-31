@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HeroMatch.Migrations
 {
     [DbContext(typeof(SiteContext))]
-    [Migration("20190731173604_FirstMigration")]
+    [Migration("20190731192926_FirstMigration")]
     partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

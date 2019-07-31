@@ -17,7 +17,7 @@ namespace HeroMatch
             var connectionString = "Server=(localdb)\\mssqllocaldb;Database=HeroMatch;Trusted_Connection=True;";
 
             optionsBuilder.UseSqlServer(connectionString);
-            //.UseLazyLoadingProxies();
+            //UseLazyLoadingProxies();
 
             base.OnConfiguring(optionsBuilder);
         }

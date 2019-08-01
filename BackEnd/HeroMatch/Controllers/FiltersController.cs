@@ -47,6 +47,16 @@ namespace HeroMatch.Controllers
             return Ok(filter);
         }
 
+        public async Task<ActionResult<Character>> Results(Filter filter)
+        {
+            var filters = await _context.Filter.FindAsync(filter);
+            var values = _context.Filter.Single(f => f.Difficulty == filter.Difficulty && f.Role == filter.Role && f.SubRole == filter.SubRole);
+
+            return _context.Character.Single(c => c.CharacterId == filter.CharacterId);
+
+
+        }
+
         // PUT: api/Filters/5
         [HttpPut("{id}")]
         public async Task<ActionResult<Character>> PutFilter([FromRoute] int id, [FromBody] Filter filter)

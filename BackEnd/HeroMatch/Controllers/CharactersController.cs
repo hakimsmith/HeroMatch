@@ -7,49 +7,32 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using HeroMatch;
 using HeroMatch.Models;
+using HeroMatch.Repositories;
 
 namespace HeroMatch.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class CharactersController : ControllerBase
+    public class CharacterController : Controller
     {
-        private readonly SiteContext _context;
+        IRepository<Character> charRepos;
 
-        public CharactersController(SiteContext context)
+        public CharacterController(IRepository<Character> charRepos)
         {
-            _context = context;
+            this.charRepos = charRepos;
         }
 
-        // GET: api/Characters
-        [HttpGet]
-        public IEnumerable<Character> GetCharacter()
+        public ViewResult AllCharacters()
         {
-            return _context.Character;
+            var model = charRepos.GetAll();
+            return View(model);
         }
 
-        // GET: api/Characters/5
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetCharacter([FromRoute] int id)
+        public object SingleCharacter(Character character)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            var character = await _context.Character.FindAsync(id);
-
-            if (character == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(character);
+            var model = charRepos.GetByProperties(character);
+            return View(model);
         }
 
-        private bool CharacterExists(int id)
-        {
-            return _context.Character.Any(e => e.CharacterId == id);
-        }
+        
+
     }
 }

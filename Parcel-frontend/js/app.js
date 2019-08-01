@@ -1,6 +1,8 @@
+import ApiActions from './api/api-actions'
 import Home from './components/home';
 import GameQuiz from './components/gameQuiz';
 import CharacterQuiz from './components/characterQuiz';
+import CharacterResult from './components/characterResult';
 
 console.log("app.js");
 
@@ -49,6 +51,18 @@ function characterQuiz(){
             console.log(difficulty)
             console.log(role)
             console.log(subrole)
+        }
+        
+        if(event.target.classList.contains('submit-button')){
+            const data = {
+                difficulty: difficulty,
+                role: role,
+                subrole: subrole
+            }
+
+            ApiActions.getRequest('https://localhost:44399/api/filters', data, character => {
+                document.querySelector('#about').innerHTML = CharacterResult(character);
+            })
         }
     })
 

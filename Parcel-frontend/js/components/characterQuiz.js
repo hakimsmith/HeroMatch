@@ -32,5 +32,7 @@ return `
         <button class='subRoleOption' value='2'>Creating opportunies by capitalizing on my enemies mistakes.</button>
     </div>
 </div>
+
+<button class='submit-button'>Submit</button>   
 `
 }

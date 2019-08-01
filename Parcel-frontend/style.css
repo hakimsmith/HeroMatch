@@ -90,15 +90,16 @@ ul{
 }
 
 .option p {
-    color:#cc9900;
+    color:#806000;
 }
 
 .option:hover {
-    background-color: rgba(182, 8, 168, 0.384);    
+    background-color: darkgray;    
 } 
- .option p:hover {
+  .option p:hover {
      color: black;
- }
+     transition: all 1.5s ease;
+ } 
    
 h2 {
     font-size: 36px;

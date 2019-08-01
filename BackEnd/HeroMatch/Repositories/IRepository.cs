@@ -5,7 +5,13 @@ using System.Threading.Tasks;
 
 namespace HeroMatch.Repositories
 {
-    public class IRepository
+    public interface IRepository<T> where T : class
     {
+        IEnumerable<T> GetAll();
+        T GetById(int id);
+        void Create(T obj);
+        void Delete(T obj);
+        void Edit(T obj);
+        T GetByProperties(T obj);
     }
 }

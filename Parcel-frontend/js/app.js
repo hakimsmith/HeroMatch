@@ -60,7 +60,7 @@ function characterQuiz(){
                 subrole: subrole
             }
 
-            ApiActions.getRequest('https://localhost:44399/api/filters', data, character => {
+            ApiActions.getRequest('https://localhost:44399/api/characters/'+ difficulty +'/'+role+'/'+subrole, character => {
                 document.querySelector('#about').innerHTML = CharacterResult(character);
             })
         }

@@ -15,5 +15,16 @@ namespace HeroMatch.Models
         public int SubRole { get; set; }
 
         public virtual int FilterId {get; set;}
+
+        public Character()
+        {
+
+        }
+        public Character(int difficulty, int role, int subRole)
+        {
+            Difficulty = difficulty;
+            Role = role;
+            SubRole = subRole;
+        }
     }
 }

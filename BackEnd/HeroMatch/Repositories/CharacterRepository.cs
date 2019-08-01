@@ -27,7 +27,7 @@ namespace HeroMatch.Repositories
 
         public Character GetById(int id)
         {
-            throw new NotImplementedException();
+            return db.Character.Single(c => c.CharacterId == id);
         }
 
 

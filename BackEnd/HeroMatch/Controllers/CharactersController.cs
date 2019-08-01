@@ -11,28 +11,32 @@ using HeroMatch.Repositories;
 
 namespace HeroMatch.Controllers
 {
-    public class CharacterController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class CharactersController : ControllerBase
     {
         IRepository<Character> charRepos;
+        private SiteContext db;
 
-        public CharacterController(IRepository<Character> charRepos)
+        public CharactersController(SiteContext db)
         {
-            this.charRepos = charRepos;
+            this.db = db; 
         }
 
-        public ViewResult AllCharacters()
+        [HttpGet]
+        public ActionResult<IEnumerable<Character>> Get()
         {
-            var model = charRepos.GetAll();
-            return View(model);
+            return db.Character;
         }
 
-        public object SingleCharacter(Character character)
+        [HttpGet("{difficulty}/{role}/{subRole}")]
+        public ActionResult<Character> GetByProperties(int difficulty, int role, int subRole)
         {
-            var model = charRepos.GetByProperties(character);
-            return View(model);
-        }
+            Character obj = new Character(difficulty, role, subRole);
+            var character = db.Character.Single(c => c.Difficulty == obj.Difficulty && c.Role == obj.Role && c.SubRole == obj.SubRole);
 
-        
+            return character;
+        }
 
     }
 }

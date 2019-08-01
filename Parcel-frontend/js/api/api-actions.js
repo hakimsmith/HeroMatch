@@ -5,12 +5,6 @@ function getRequest(location, callback){
      .then(jsonData => callback(jsonData))
      .catch(err => console.log(err))
  }
-
- function getByIdRequest(location, requestBody, callback){
-     console.log(location)
-     fetch(location)
-     .then()
- }
  
  function postRequest(location, requestBody, callback){
     fetch(location,{

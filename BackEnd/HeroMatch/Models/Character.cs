@@ -10,6 +10,7 @@ namespace HeroMatch.Models
         public int CharacterId { get; set; }
         public string Name { get; set; }
         public string Image { get; set; }
+        public string SmallImage { get; set; }
         public int Difficulty { get; set; }
         public int Role { get; set; }
         public int SubRole { get; set; }

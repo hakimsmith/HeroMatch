@@ -1,20 +1,20 @@
 export default function CharacterResult(characters){
     return `
-    <ul>
+   <div class = "char-results">
 
     ${characters.map(character =>{
 
             return `
-        <li>
+        <div class= "char-single-result">
             <img src=${character.image}>
             <p>${character.name}</p>
 
-        </li>
-        `        
-        }
+        </div>
+    
+    
+    `        
 
-    )
     }).join("")}
-    </ul>
+   </div>
     `
 }

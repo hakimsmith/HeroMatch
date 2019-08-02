@@ -15,7 +15,6 @@ namespace HeroMatch.Controllers
     [ApiController]
     public class CharactersController : ControllerBase
     {
-        IRepository<Character> charRepos;
         private SiteContext db;
 
         public CharactersController(SiteContext db)
@@ -32,18 +31,10 @@ namespace HeroMatch.Controllers
         [HttpGet("{difficulty}/{role}/{subRole}")]
         public ActionResult<List<Character>> GetByProperties(int difficulty, int role, int subRole)
         {
-            List<Character> charlist = new List<Character>();
+            IEnumerable<Character> charlist = db.Character
+                .Where(c => c.Difficulty == difficulty && c.Role == role && c.SubRole == subRole);
 
-            Character obj = new Character(difficulty, role, subRole);
-            foreach(var c in db.Character)
-            {
-                if(c.Difficulty == obj.Difficulty && c.Role == obj.Role && c.SubRole == obj.SubRole)
-                {
-                    charlist.Add(c);
-                }
-            }
             return charlist.ToList();
-            
         }
 
     }

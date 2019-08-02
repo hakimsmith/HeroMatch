@@ -23,13 +23,12 @@ return `
     </div>
 </div>
 
-<div class=Question_Container>
+<div class=Question_Container >
     <div class=Question_Head>
-        <h2>Within this role, which of these styles are more appealing?</h2>
+        <h2>Within this role, which of these styles is most appealing?</h2>
     </div>
-    <div class=Question_Choices value='3'>
-        <button class='subRoleOption' value='1'>Controlling the flow of the game by inhibiting my opponent(s) actions.</button>
-        <button class='subRoleOption' value='2'>Creating opportunies by capitalizing on my enemies mistakes.</button>
+    <div class=Question_Choices id='subroleOptions' value='3'>
+        <p>Please select a role before answering this question.</p>
     </div>
 </div>
 

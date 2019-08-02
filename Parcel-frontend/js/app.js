@@ -3,6 +3,7 @@ import Home from './components/home';
 import GameQuiz from './components/gameQuiz';
 import CharacterQuiz from './components/characterQuiz';
 import CharacterResult from './components/characterResult';
+import SubroleOptions from './components/subrole-options';
 
 console.log("app.js");
 
@@ -11,6 +12,7 @@ pageBuild();
 function pageBuild(){
     home();
     characterQuiz();
+    
     
 };
 
@@ -44,6 +46,7 @@ function characterQuiz(){
             console.log(difficulty)
             console.log(role)
             console.log(subrole)
+            document.getElementById('subroleOptions').innerHTML = SubroleOptions(role);
         }
         
         if(event.target.classList.contains('subRoleOption')){

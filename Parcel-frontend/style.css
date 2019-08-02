@@ -41,7 +41,9 @@ header {
     padding-top: 80px;
 }
 body {
-    background-image:url("./Images/red-and-blue.jpg");
+    background-image:url("./Images/bg.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
     color: #fff;
     padding: 2em;
 }

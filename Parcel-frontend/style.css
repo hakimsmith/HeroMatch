@@ -15,6 +15,7 @@ h1 {
 }
 
 h2,h3 {
+    font-size: 30px;
     font-weight: bold;
     font-family: 'Cinzel', serif;
 }
@@ -35,6 +36,14 @@ body {
     background-image:url("./Images/red-and-blue.jpg");
     color: #fff;
     padding: 2em;
+}
+#quiz_body {
+    
+    border-style: outset;
+    border-color: #2b1661;
+    border-width: 20px; 
+    width: auto;
+    height: 800px;
 }
 #about, #quiz {
     width: auto;
@@ -57,25 +66,20 @@ ul {
 }
 
 .Question_Container {
-  border-style: outset;
-  border-color: #2b1661;
-  width: auto;
-  height: 800px;
   text-align: center;
-  border-width: 20px; 
   font-size: 36px;
   font-family: 'Cinzel', serif;
   font-weight: bold;
-
 }
 
- .Question_Choices {
+.Question_Choices {
     padding-top: 2em;
     display: flex;
     flex-direction: row;    
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
+    font-size: 20px;
 } 
 
 
@@ -88,8 +92,8 @@ ul {
 
 .option,
 .submit-button {
-    height: 200px;
-    width: 300px;
+    height: 100px;
+    width: 150px;
     font-size: 24px; 
     background-color: black;
     margin: 20px; 
@@ -99,6 +103,7 @@ ul {
 
 .option p, .submit-button p {
     color: white;
+    font-size: 20px;
 }
 
 .option:hover, .submit-button:hover {

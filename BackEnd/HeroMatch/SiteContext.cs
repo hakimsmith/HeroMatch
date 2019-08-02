@@ -10,6 +10,7 @@ namespace HeroMatch
     public class SiteContext : DbContext
     {
         public DbSet<Character> Character { get; set; }
+        public DbSet<Game> Game { get; set; }
         public DbSet<Filter> Filter { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

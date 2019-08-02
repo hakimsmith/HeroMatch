@@ -1,5 +1,5 @@
-export default function Home(home){
-    return`
-    
+export default function Home(){
+    return `
+        Hello World!!!!!!!!!
     `
 }

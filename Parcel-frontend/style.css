@@ -29,6 +29,7 @@ header{
 body{
     background-image:url("./Images/red-and-blue.jpg");
     color: #fff;
+    padding: 2em;
 }
 #about, #quiz{
     width: auto;
@@ -62,6 +63,9 @@ ul{
   height: 800px;
   text-align: center;
   border-width: 20px; 
+  font-size: 36px;
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
 
 }
 
@@ -77,6 +81,9 @@ ul{
 
 .Question_Head{
     padding: 2em 2em;
+    font-size: 36px;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
 }
 
 .option,
@@ -101,8 +108,29 @@ ul{
      color: black;
      transition: all 1.5s ease;
  } 
-   
+
+.quiz  {
+color: white;
+background-color: black;
+width: 100px;
+height: 50px;
+font-weight: bold;
+
+}
+.quiz p:hover {
+color: black;
+transition: all 1.5s ease;
+}
+
+.quiz:hover{
+background-color: darkgray;    
+transition: all 1.5s ease;
+}
 h2 {
     font-size: 36px;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+
+
 }
  

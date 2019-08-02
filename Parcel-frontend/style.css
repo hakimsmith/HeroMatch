@@ -1,4 +1,4 @@
-*{
+* {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6em;
     box-sizing: border-box;
@@ -7,11 +7,16 @@
     color: white;
     /* text-shadow: 10px 10px 5px lightgrey; */
 }
-h1{
+h1 {
     font-size: 60px;
     font-weight: bold;
     font-family: 'Cinzel', serif;
 /* text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15); */
+}
+
+h2,h3 {
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
 }
 span {
 
@@ -20,28 +25,27 @@ span {
     font-weight: bold;
     /* text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15); */
 }
-header{
+header {
     display: flex;    
     flex-direction: column; 
     align-items: center;
     padding-top: 80px;
 }
-body{
+body {
     background-image:url("./Images/red-and-blue.jpg");
     color: #fff;
     padding: 2em;
 }
-#about, #quiz{
+#about, #quiz {
     width: auto;
     height: 400px;
 }
-ul{
+ul {
     padding-top:10px;
     padding-bottom: 30px;
     font-size: 25px;
     justify-content: space-around;
-    
-    
+
     top: 0;
     left: 0;
     width: 100%;
@@ -50,13 +54,9 @@ ul{
     align-items: stretch;
     background:#003333; 
     font-family: 'Grenze', serif;
-   
-    /* text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15); */
-
-   
 }
 
-.Question_Container{
+.Question_Container {
   border-style: outset;
   border-color: #2b1661;
   width: auto;
@@ -69,7 +69,7 @@ ul{
 
 }
 
- .Question_Choices{
+ .Question_Choices {
     padding-top: 2em;
     display: flex;
     flex-direction: row;    
@@ -79,7 +79,7 @@ ul{
 } 
 
 
-.Question_Head{
+.Question_Head {
     padding: 2em 2em;
     font-size: 36px;
     font-family: 'Cinzel', serif;
@@ -104,33 +104,26 @@ ul{
 .option:hover, .submit-button:hover {
     background-color: darkgray;    
 } 
-  .option p:hover, .submit-button p:hover {
-     color: black;
-     transition: all 1.5s ease;
- } 
+.option p:hover, .submit-button p:hover {
+    color: black;
+    transition: all 1.5s ease;
+} 
 
-.quiz  {
-color: white;
-background-color: black;
-width: 100px;
-height: 50px;
-font-weight: bold;
+.quiz {
+    color: white;
+    background-color: black;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
 
 }
 .quiz p:hover {
-color: black;
-transition: all 1.5s ease;
+    color: black;
+    transition: all 1.5s ease;
 }
 
-.quiz:hover{
-background-color: darkgray;    
-transition: all 1.5s ease;
+.quiz:hover {
+    background-color: darkgray;    
+    transition: all 1.5s ease;
 }
-h2 {
-    font-size: 36px;
-    font-family: 'Cinzel', serif;
-    font-weight: bold;
 
-
-}
- 

@@ -1,7 +1,20 @@
-export default function CharacterResult(character){
+export default function CharacterResult(characters){
     return `
-    <img src=${character.image}>
-    <p>${character.name}</p>
-    
+    <ul>
+
+    ${characters.map(character =>{
+
+            return `
+        <li>
+            <img src=${character.image}>
+            <p>${character.name}</p>
+
+        </li>
+        `        
+        }
+
+    )
+    }).join("")}
+    </ul>
     `
 }

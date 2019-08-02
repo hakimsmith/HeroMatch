@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=<1.0>">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hero Match</title>
-    <link rel= "stylesheet" type= "text/css" href="style.css">
+    <link rel= "stylesheet" type= "text/css" href="style.css"> 
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Grenze&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -23,17 +23,22 @@
             
         </section>
 
-        <section id="quiz">
-            <h2>Take the quiz</h2>
-            <button class= "quiz">Click here to begin quiz</button>
-            
-        </section>    
-        <section id= "nav">
-                <a href= #login><h3>Login</h3></a>                        
-                <a href= #about><h3>About</h3></a>
-                <a href= #quiz><h3>Take quiz</h3></a>                              
-        </section>    
+    <section id="quiz">
+        <h2>Take the quiz</h2>
+        <button id="quizbutton">Click here to begin quiz</button>
+        
+    </section>    
+    <nav>
+        <ul>
+            <li id = 'nav_home'>Home</li>
+            <li id = 'nav_quiz'>Take quiz</li>
+            <li id = 'nav_about'>About</li>
+            <li id = 'nav_login'>Login</li>
+        </ul>   
+                                    
+    </nav>    
 
 <div id= 'root'></div>
+<script src="./js/app.js"></script>
 </body>
 </html>

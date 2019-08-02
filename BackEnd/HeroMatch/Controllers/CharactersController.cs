@@ -30,10 +30,19 @@ namespace HeroMatch.Controllers
         }
 
         [HttpGet("{difficulty}/{role}/{subRole}")]
-        public ActionResult<Character> GetByProperties(int difficulty, int role, int subRole)
+        public ActionResult<List<Character>> GetByProperties(int difficulty, int role, int subRole)
         {
+            List<Character> charlist = new List<Character>();
+
             Character obj = new Character(difficulty, role, subRole);
-            return db.Character.Single(c => c.Difficulty == obj.Difficulty && c.Role == obj.Role && c.SubRole == obj.SubRole);
+            foreach(var c in db.Character)
+            {
+                if(c.Difficulty == obj.Difficulty && c.Role == obj.Role && c.SubRole == obj.SubRole)
+                {
+                    charlist.Add(c);
+                }
+            }
+            return charlist.ToList();
             
         }
 

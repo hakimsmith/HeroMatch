@@ -3,6 +3,8 @@ import Home from './components/home';
 import GameQuiz from './components/gameQuiz';
 import CharacterQuiz from './components/characterQuiz';
 import CharacterResult from './components/characterResult';
+import SubroleOptions from './components/subrole-options';
+import AllChars from './components/all-chars';
 
 console.log("app.js");
 
@@ -11,6 +13,8 @@ pageBuild();
 function pageBuild(){
     home();
     characterQuiz();
+    allChars();
+    
     
 };
 
@@ -21,6 +25,19 @@ function home(){
         body.innerHTML = Home();
     });
 };
+
+function allChars(){
+    document.getElementById('about').addEventListener('click', function(){
+        let gameId = 0;
+        if(event.target.classList.contains('allChar')){
+            gameId = event.target.value
+            ApiActions.getRequest('https://localhost:44399/api/game/'+ gameId, game => {
+                    document.querySelector('#about').innerHTML = AllChars(game);
+        }
+            )
+    }
+    })
+}
 
 function characterQuiz(){
     let difficulty = 0;
@@ -44,6 +61,7 @@ function characterQuiz(){
             console.log(difficulty)
             console.log(role)
             console.log(subrole)
+            document.getElementById('subroleOptions').innerHTML = SubroleOptions(role);
         }
         
         if(event.target.classList.contains('subRoleOption')){
@@ -54,12 +72,11 @@ function characterQuiz(){
         }
         
         if(event.target.classList.contains('submit-button')){
-            const data = {
-                difficulty: difficulty,
-                role: role,
-                subrole: subrole
-            }
-
+            
+                difficulty = difficulty
+                role = role
+                subrole = subrole
+            
             ApiActions.getRequest('https://localhost:44399/api/characters/'+ difficulty +'/'+role+'/'+subrole, character => {
                 document.querySelector('#about').innerHTML = CharacterResult(character);
             })

@@ -1,7 +1,22 @@
-export default function CharacterResult(character){
+export default function CharacterResult(characters){
     return `
-    <img src=${character.image}>
-    <p>${character.name}</p>
+   <div class = "char-results">
+
+    ${characters.map(character =>{
+
+            return `
+        <div class= "char-single-result">
+        <a href= "${character.characterUrl}" target="_blank">
+        <img src=${character.image}>            
+        <p>${character.name}</p>
+        </a>
+
+        </div>
     
+    
+    `        
+
+    }).join("")}
+   </div>
     `
 }

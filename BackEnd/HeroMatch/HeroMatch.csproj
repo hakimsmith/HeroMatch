@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20190802181533_addedDbSetGame.cs" />
+    <Compile Remove="Migrations\20190802181533_addedDbSetGame.Designer.cs" />
+    <Compile Remove="Migrations\20190802183607_lazyLoading.cs" />
+    <Compile Remove="Migrations\20190802183607_lazyLoading.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

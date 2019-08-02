@@ -33,9 +33,8 @@ namespace HeroMatch.Controllers
         public ActionResult<Character> GetByProperties(int difficulty, int role, int subRole)
         {
             Character obj = new Character(difficulty, role, subRole);
-            var character = db.Character.Single(c => c.Difficulty == obj.Difficulty && c.Role == obj.Role && c.SubRole == obj.SubRole);
-
-            return character;
+            return db.Character.Single(c => c.Difficulty == obj.Difficulty && c.Role == obj.Role && c.SubRole == obj.SubRole);
+            
         }
 
     }

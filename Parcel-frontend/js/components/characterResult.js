@@ -1,7 +1,7 @@
 export default function CharacterResult(character){
     return `
-    <img src=${character.Image}>
-    <p>${character.Name}</p>
+    <img src=${character.image}>
+    <p>${character.name}</p>
     
     `
 }

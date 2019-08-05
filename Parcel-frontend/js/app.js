@@ -1,6 +1,5 @@
 import ApiActions from './api/api-actions'
 import Home from './components/home';
-import GameQuiz from './components/gameQuiz';
 import CharacterQuiz from './components/characterQuiz';
 import CharacterResult from './components/characterResult';
 import SubroleOptions from './components/subrole-options';
@@ -48,11 +47,11 @@ function characterQuiz(){
     let aesthetic = 0;
 
     document.getElementById('quizbutton').addEventListener('click', function(){
-        document.getElementById('quiz').innerHTML = CharacterQuiz(gameId);
-        if(gameId == 2){
-            document.getElementById('optional').innerHTML= AestheticOptions();
-            document.getElementById('optional').style.display="block";
-        }
+        document.getElementById('quiz').innerHTML = CharacterQuiz();
+        // if(gameId == 2){
+        //     document.getElementById('optional').innerHTML= AestheticOptions();
+        //     document.getElementById('optional').style.display="block";
+        // }
     })
 
     document.querySelector('#quiz').addEventListener('click', function(){

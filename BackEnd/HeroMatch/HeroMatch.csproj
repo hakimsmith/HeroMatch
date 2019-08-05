@@ -9,6 +9,8 @@
     <Compile Remove="Migrations\20190802181533_addedDbSetGame.Designer.cs" />
     <Compile Remove="Migrations\20190802183607_lazyLoading.cs" />
     <Compile Remove="Migrations\20190802183607_lazyLoading.Designer.cs" />
+    <Compile Remove="Migrations\20190805173128_fixedXinZhaoCharURL.cs" />
+    <Compile Remove="Migrations\20190805173128_fixedXinZhaoCharURL.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

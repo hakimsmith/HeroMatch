@@ -5,6 +5,7 @@ import CharacterQuiz from './components/characterQuiz';
 import CharacterResult from './components/characterResult';
 import SubroleOptions from './components/subrole-options';
 import AllChars from './components/all-chars';
+import Aesthetic from './components/aesthetic-options'
 
 console.log("app.js");
 
@@ -14,6 +15,7 @@ function pageBuild(){
     home();
     characterQuiz();
     allChars();
+    
     
     
 };
@@ -43,9 +45,14 @@ function characterQuiz(){
     let difficulty = 0;
     let role = 0;
     let subrole = 0;
+    let aesthetic = 0;
 
     document.getElementById('quizbutton').addEventListener('click', function(){
-        document.getElementById('quiz').innerHTML = CharacterQuiz();
+        document.getElementById('quiz').innerHTML = CharacterQuiz(gameId);
+        if(gameId == 2){
+            document.getElementById('optional').innerHTML= AestheticOptions();
+            document.getElementById('optional').style.display="block";
+        }
     })
 
     document.querySelector('#quiz').addEventListener('click', function(){
@@ -76,10 +83,21 @@ function characterQuiz(){
                 difficulty = difficulty
                 role = role
                 subrole = subrole
+                aesthetic = aesthetic
             
             ApiActions.getRequest('https://localhost:44399/api/characters/'+ difficulty +'/'+role+'/'+subrole, character => {
                 document.querySelector('#about').innerHTML = CharacterResult(character);
             })
+        }
+
+        if(event.target.classList.contains('aestheticOption')){
+            aesthetic = event.target.value
+            console.log(difficulty)
+            console.log(role)
+            console.log(subrole)
+            console.log(aesthetic)
+            document.getElementById('aestheticOption').innerHTML = AestheticOptions()
+
         }
     })
 

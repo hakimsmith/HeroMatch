@@ -31,7 +31,9 @@ return `
         <p>Please select a role before answering this question.</p>
     </div>
 </div>
-
+<div class=Question_Container id=optional style="display:none">
+</div>
 <button class='submit-button'>Submit</button>   
+
 `
 }

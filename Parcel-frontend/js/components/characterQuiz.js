@@ -1,14 +1,21 @@
 export default function CharacterQuiz(){
 return `
 
+<header>
+       <img src="Images/LOL-logo.JPG">
+       <h1>Character Quiz</h1>
+ </header>
+
+
 <div class=Question_Container>
-    <div class=Question_Head>
+   <button class="Question_Head">
         <h2>How would you describe your level of experience with video games?</h2>
-    </div>
+    </button>
     <div class=Question_Choices value='1'>
-        <button class='diffOption' value='1'>I have little to no experience with video games.</button>
-        <button class='diffOption' value='2'>I have some experience with video games.</button>
-        <button class='diffOption' value='3'>I have a lot of experience with video games.</button>
+        <button class='diffOption' value='1'>
+        <p>I have little to no experience with video games.</p></button>
+        <button class='diffOption' value='2'><p>I have some experience with video games.</p></button>
+        <button class='diffOption' value='3'><p>I have a lot of experience with video games.</p></button>
     </div>
 </div>
 

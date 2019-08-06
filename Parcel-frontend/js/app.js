@@ -119,13 +119,15 @@ function characterQuiz(){
             console.log(aesthetic)
         }
         
+        
+
         if(event.target.classList.contains('submit-button')){
             
-                difficulty = difficulty
-                role = role
-                subrole = subrole
-                aesthetic = aesthetic
-                let gameid = document.getElementById('charquiz_gameId').value
+            difficulty = difficulty
+            role = role
+            subrole = subrole
+            aesthetic = aesthetic
+            let gameid = document.getElementById('charquiz_gameId').value
             
             ApiActions.getRequest('https://localhost:44399/api/characters/'
             +gameid+'/'+difficulty +'/'+role+'/'+subrole+'/'+aesthetic , character => {
@@ -135,25 +137,26 @@ function characterQuiz(){
                 subrole = 0
                 aesthetic = 0
             })
-        }
-
-
+            
+        }  
+        
+        var coll = document.getElementsByClassName("Question_Head");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) 
+                {
+                content.style.maxHeight = null;
+                } 
+            else 
+                {
+                content.style.maxHeight = content.scrollHeight + "px";
+                }
+            })
+        };
     })
-
-          var coll = document.getElementsByClassName("Question_Head");
-          var i;
-          for (i = 0; i < coll.length; i++) {
-           coll[i].addEventListener("click", function() {
-             this.classList.toggle("active");
-             var content = this.nextElementSibling;
-             if (content.style.maxHeight) {
-               content.style.maxHeight = null;
-             } else {
-               content.style.maxHeight = content.scrollHeight + "px";
-             }
-           });
-          
-        }
-
+    
 }
 

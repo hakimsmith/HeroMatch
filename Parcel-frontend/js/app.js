@@ -13,35 +13,35 @@ console.log("app.js");
 pageBuild();
 
 function pageBuild(){
-    // home();
+    home();
     characterQuiz();
     allChars();
-    baseStyle();
+    //baseStyle();
     
     
     
 };
 
-function baseStyle(){
-    document.getElementById('nav_home').addEventListener('click', function(){
+// function baseStyle(){
+//     document.getElementById('nav_home').addEventListener('click', function(){
 
         
-            apiActions.getRequest('https://localhost:44399/api/game', games =>{
-                document.innerHTML = BaseStyle(Home(games));
+//             apiActions.getRequest('https://localhost:44399/api/game', games =>{
+//                 document.innerHTML = BaseStyle(Home(games));
 
-            }
-            )
+//             }
+//             )
     
-    })
-}
+//     })
+// }
 
-// function home(){
-//     const body = document.getElementById('about');
-//     const home = document.getElementById('nav_home');
-//     home.addEventListener('click', function(){
-//         body.innerHTML = Home();
-//     });
-// };
+function home(){
+    const body = document.getElementById('about');
+    const home = document.getElementById('nav_home');
+    home.addEventListener('click', function(){
+        body.innerHTML = Home();
+    });
+};
 
 function allChars(){
     document.getElementById('about').addEventListener('click', function(){

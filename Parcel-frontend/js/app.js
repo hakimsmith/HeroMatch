@@ -112,25 +112,34 @@ function characterQuiz(){
             console.log(subrole)
             console.log(aesthetic)
             document.getElementById('aestheticOption').innerHTML = AestheticOptions()
+          }
 
-        }
+
+          var coll = document.getElementsByClassName("Question_Head");
+          var i;
+          for (i = 0; i < coll.length; i++) {
+           coll[i].addEventListener("click", function() {
+             this.classList.toggle("active");
+             var content = this.nextElementSibling;
+             if (content.style.maxHeight) {
+               content.style.maxHeight = null;
+             } else {
+               content.style.maxHeight = content.scrollHeight + "px";
+             }
+           });
+          
+      }
+
+
+
+
+
+
+       //   
     })
 
 
 
 
-    var coll = document.getElementsByClassName("Question_Head");
-    var i;
-    for (i = 0; i < coll.length; i++) {
-     coll[i].addEventListener("click", function() {
-       this.classList.toggle("active");
-       var content = this.nextElementSibling;
-       if (content.style.maxHeight) {
-         content.style.maxHeight = null;
-       } else {
-         content.style.maxHeight = content.scrollHeight + "px";
-       }
-     });
-    
-}}
+   }
 

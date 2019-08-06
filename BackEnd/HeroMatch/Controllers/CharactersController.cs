@@ -28,11 +28,11 @@ namespace HeroMatch.Controllers
             return db.Character;
         }
 
-        [HttpGet("{difficulty}/{role}/{subRole}")]
-        public ActionResult<List<Character>> GetByProperties(int difficulty, int role, int subRole)
+        [HttpGet("{gameId}/{difficulty}/{role}/{subRole}/{aesthetic}")]
+        public ActionResult<List<Character>> GetByProperties(int gameId, int difficulty, int role, int subRole, int aesthetic)
         {
             IEnumerable<Character> charlist = db.Character
-                .Where(c => c.Difficulty == difficulty && c.Role == role && c.SubRole == subRole);
+                .Where(c => c.GameId == gameId && c.Difficulty == difficulty && c.Role == role && c.SubRole == subRole && c.Aesthetic == aesthetic);
 
             return charlist.ToList();
         }

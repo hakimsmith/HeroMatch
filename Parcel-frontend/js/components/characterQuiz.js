@@ -41,7 +41,7 @@ return `
 <div class=Question_Container id=optional style="display:none">
 </div>
 <button class='submit-button'>Submit</button>
-<input id='gameId' style='display:none' value = ${gameId}>  
+<input id='charquiz_gameId' style='display:none' value = ${gameId}>  
 
 `
 }

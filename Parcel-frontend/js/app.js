@@ -4,7 +4,9 @@ import CharacterQuiz from './components/characterQuiz';
 import CharacterResult from './components/characterResult';
 import SubroleOptions from './components/subrole-options';
 import AllChars from './components/all-chars';
+import BaseStyle from './components/style-components/base-style';
 import Aesthetic from './components/aesthetic-options'
+import apiActions from './api/api-actions';
 
 console.log("app.js");
 
@@ -14,13 +16,27 @@ function pageBuild(){
     home();
     characterQuiz();
     allChars();
+    //baseStyle();
     
     
     
 };
 
+// function baseStyle(){
+//     document.getElementById('nav_home').addEventListener('click', function(){
+
+        
+//             apiActions.getRequest('https://localhost:44399/api/game', games =>{
+//                 document.innerHTML = BaseStyle(Home(games));
+
+//             }
+//             )
+    
+//     })
+// }
+
 function home(){
-    const body = document.getElementById('root');
+    const body = document.getElementById('about');
     const home = document.getElementById('nav_home');
     home.addEventListener('click', function(){
         body.innerHTML = Home();

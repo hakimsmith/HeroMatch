@@ -1,4 +1,5 @@
 import ApiActions from './api/api-actions'
+import TakeQuiz from './components/takeQuiz';
 import Home from './components/home';
 import CharacterQuiz from './components/characterQuiz';
 import CharacterResult from './components/characterResult';
@@ -17,7 +18,7 @@ function pageBuild(){
     characterQuiz();
     allChars();
     //baseStyle();
-    
+    takeQuiz();
     
     
 };
@@ -45,6 +46,17 @@ function home(){
         })
     });
 };
+
+function takeQuiz(){
+    const body = document.getElementById('about');
+    const quiz = document.getElementById('nav_quiz');
+    quiz.addEventListener('click', function(){
+        apiActions.getRequest('https://localhost:44399/api/game', games =>{
+        body.innerHTML = TakeQuiz(games);
+        document.getElementById('quiz').innerHTML = '';
+        })
+    });
+}
 
 function allChars(){
     document.getElementById('about').addEventListener('click', function(){

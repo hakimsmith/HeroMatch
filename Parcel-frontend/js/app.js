@@ -111,6 +111,13 @@ function characterQuiz(){
             console.log(role)
             console.log(subrole)
         }
+        if(event.target.classList.contains('aestheticOption')){
+            aesthetic = event.target.value
+            console.log(difficulty)
+            console.log(role)
+            console.log(subrole)
+            console.log(aesthetic)
+        }
         
         if(event.target.classList.contains('submit-button')){
             
@@ -118,21 +125,18 @@ function characterQuiz(){
                 role = role
                 subrole = subrole
                 aesthetic = aesthetic
+                let gameid = document.getElementById('charquiz_gameId').value
             
-            ApiActions.getRequest('https://localhost:44399/api/characters/'+ difficulty +'/'+role+'/'+subrole, character => {
+            ApiActions.getRequest('https://localhost:44399/api/characters/'
+            +gameid+'/'+difficulty +'/'+role+'/'+subrole+'/'+aesthetic , character => {
                 document.querySelector('#about').innerHTML = CharacterResult(character);
+                difficulty = 0
+                role = 0
+                subrole = 0
+                aesthetic = 0
             })
         }
 
-        if(event.target.classList.contains('aestheticOption')){
-            aesthetic = event.target.value
-            console.log(difficulty)
-            console.log(role)
-            console.log(subrole)
-            console.log(aesthetic)
-            document.getElementById('aestheticOption').innerHTML = AestheticOptions()
-
-        }
     })
 
 };

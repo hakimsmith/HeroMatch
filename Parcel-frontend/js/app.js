@@ -39,7 +39,9 @@ function home(){
     const body = document.getElementById('about');
     const home = document.getElementById('nav_home');
     home.addEventListener('click', function(){
-        body.innerHTML = Home();
+        apiActions.getRequest('https://localhost:44399/api/game', games =>{
+        body.innerHTML = Home(games);
+        })
     });
 };
 

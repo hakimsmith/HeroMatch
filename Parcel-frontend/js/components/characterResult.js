@@ -18,5 +18,6 @@ export default function CharacterResult(characters){
 
     }).join("")}
    </div>
+   <button value='1' class="allChar">View All Characters</button>
     `
 }

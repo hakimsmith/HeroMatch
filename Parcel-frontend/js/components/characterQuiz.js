@@ -1,4 +1,4 @@
-export default function CharacterQuiz(){
+export default function CharacterQuiz(gameId){
 return `
 
 <header>
@@ -40,7 +40,8 @@ return `
 </div>
 <div class=Question_Container id=optional style="display:none">
 </div>
-<button class='submit-button'>Submit</button>   
+<button class='submit-button'>Submit</button>
+<input id='gameId' style='display:none' value = ${gameId}>  
 
 `
 }

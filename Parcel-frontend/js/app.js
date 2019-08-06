@@ -5,7 +5,7 @@ import CharacterResult from './components/characterResult';
 import SubroleOptions from './components/subrole-options';
 import AllChars from './components/all-chars';
 import BaseStyle from './components/style-components/base-style';
-import Aesthetic from './components/aesthetic-options'
+import AestheticOptions from './components/aesthetic-options'
 import apiActions from './api/api-actions';
 
 console.log("app.js");
@@ -41,6 +41,7 @@ function home(){
     home.addEventListener('click', function(){
         apiActions.getRequest('https://localhost:44399/api/game', games =>{
         body.innerHTML = Home(games);
+        document.getElementById('quiz').innerHTML = '';
         })
     });
 };
@@ -52,9 +53,9 @@ function allChars(){
             gameId = event.target.value
             ApiActions.getRequest('https://localhost:44399/api/game/'+ gameId, game => {
                     document.querySelector('#about').innerHTML = AllChars(game);
-        }
+                }
             )
-    }
+        }
     })
 }
 
@@ -64,12 +65,16 @@ function characterQuiz(){
     let subrole = 0;
     let aesthetic = 0;
 
-    document.getElementById('quizbutton').addEventListener('click', function(){
-        document.getElementById('quiz').innerHTML = CharacterQuiz();
-        // if(gameId == 2){
-        //     document.getElementById('optional').innerHTML= AestheticOptions();
-        //     document.getElementById('optional').style.display="block";
-        // }
+    document.addEventListener('click', function(){
+        if(event.target.classList.contains('select-game')){
+            console.log('event')
+            let gameId = event.target.parentElement.querySelector('.select-game__id').value
+            document.getElementById('quiz').innerHTML = CharacterQuiz(gameId);
+            if(gameId == 2){
+                document.getElementById('optional').innerHTML= AestheticOptions();
+                document.getElementById('optional').style.display="block";
+            }
+        }
     })
 
     document.querySelector('#quiz').addEventListener('click', function(){

@@ -7,7 +7,9 @@
     color: white;
     /* text-shadow: 10px 10px 5px lightgrey; */
 }
-
+img{
+    width: 200px;
+}
 nav{
     position: fixed;
     top: 0;

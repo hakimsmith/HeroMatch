@@ -1,10 +1,14 @@
-export default function CharacterResult(characters){
+export default function CharacterResult(characters, aesthetic){
+    characters.sort(function(a,b){
+        return a.aesthetic - b.aesthetic
+    })
     return `
    <div class = "char-results">
 
     ${characters.map(character =>{
 
-            return `
+        if(character.aesthetic == aesthetic)
+        return `
         <div class= "char-single-result">
         <a href= "${character.characterUrl}" target="_blank">
         <img src=${character.image}>            
@@ -12,9 +16,17 @@ export default function CharacterResult(characters){
         </a>
 
         </div>
-    
-    
-    `        
+        `
+        if(character.aesthetic != aesthetic)
+        return `
+        <div class= "char-single-result">
+        <a href= "${character.characterUrl}" target="_blank">
+        <img src=${character.smallImage}>            
+        <p>${character.name}</p>
+        </a>
+
+        </div>
+        `     
 
     }).join("")}
    </div>

@@ -130,12 +130,9 @@ function characterQuiz(){
             let gameid = document.getElementById('charquiz_gameId').value
             
             ApiActions.getRequest('https://localhost:44399/api/characters/'
-            +gameid+'/'+difficulty +'/'+role+'/'+subrole+'/'+aesthetic , character => {
-                document.querySelector('#about').innerHTML = CharacterResult(character);
-                difficulty = 0
-                role = 0
-                subrole = 0
-                aesthetic = 0
+            +gameid+'/'+difficulty +'/'+role+'/'+subrole , characters => {
+                document.querySelector('#about').innerHTML = CharacterResult(characters, aesthetic);
+                
             })
             
         }  

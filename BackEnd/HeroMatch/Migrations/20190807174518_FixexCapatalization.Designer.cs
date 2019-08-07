@@ -3,14 +3,16 @@ using HeroMatch;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HeroMatch.Migrations
 {
     [DbContext(typeof(SiteContext))]
-    partial class SiteContextModelSnapshot : ModelSnapshot
+    [Migration("20190807174518_FixexCapatalization")]
+    partial class FixexCapatalization
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -98,7 +100,7 @@ namespace HeroMatch.Migrations
                         new { CharacterId = 47, Aesthetic = 2, CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/Mordekaiser/", Difficulty = 2, GameId = 2, Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_0.jpg", Name = "Mordekaiser", Role = 1, SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/Mordekaiser.png", SubRole = 2 },
                         new { CharacterId = 48, Aesthetic = 1, CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/Olaf/", Difficulty = 2, GameId = 2, Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Olaf_0.jpg", Name = "Olaf", Role = 1, SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/Olaf.png", SubRole = 2 },
                         new { CharacterId = 49, Aesthetic = 1, CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/Pantheon/", Difficulty = 1, GameId = 2, Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pantheon_0.jpg", Name = "Pantheon", Role = 1, SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/Pantheon.png", SubRole = 2 },
-                        new { CharacterId = 50, Aesthetic = 3, CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/RekSai/", Difficulty = 2, GameId = 2, Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/RekSai_0.jpg", Name = "Rek'Sai", Role = 1, SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/RekSai.png", SubRole = 2 },
+                        new { CharacterId = 50, Aesthetic = 3, CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/Reksai/", Difficulty = 2, GameId = 2, Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Reksai_0.jpg", Name = "Rek'Sai", Role = 1, SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/Reksai.png", SubRole = 2 },
                         new { CharacterId = 51, Aesthetic = 3, CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/Renekton/", Difficulty = 3, GameId = 2, Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renekton_0.jpg", Name = "Renekton", Role = 1, SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/Renekton.png", SubRole = 2 },
                         new { CharacterId = 52, Aesthetic = 3, CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/Shyvana/", Difficulty = 1, GameId = 2, Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shyvana_0.jpg", Name = "Shyvana", Role = 1, SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/Shyvana.png", SubRole = 2 },
                         new { CharacterId = 53, Aesthetic = 1, CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/Singed/", Difficulty = 2, GameId = 2, Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Singed_0.jpg", Name = "Singed", Role = 1, SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/Singed.png", SubRole = 2 },
@@ -139,7 +141,7 @@ namespace HeroMatch.Migrations
                         new { CharacterId = 87, Aesthetic = 2, CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/Kaisa/", Difficulty = 2, GameId = 2, Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kaisa_0.jpg", Name = "Kai'Sa", Role = 2, SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/Kaisa.png", SubRole = 1 },
                         new { CharacterId = 88, Aesthetic = 2, CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/Kalista/", Difficulty = 3, GameId = 2, Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kalista_0.jpg", Name = "Kalista", Role = 2, SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/Kalista.png", SubRole = 1 },
                         new { CharacterId = 89, Aesthetic = 3, CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/Kindred/", Difficulty = 3, GameId = 2, Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kindred_0.jpg", Name = "Kindred", Role = 2, SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/Kindred.png", SubRole = 1 },
-                        new { CharacterId = 91, Aesthetic = 3, CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/KogMaw/", Difficulty = 1, GameId = 2, Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KogMaw_0.jpg", Name = "Kog'Maw", Role = 2, SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/KogMaw.png", SubRole = 1 },
+                        new { CharacterId = 91, Aesthetic = 3, CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/Kogmaw/", Difficulty = 1, GameId = 2, Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kogmaw_0.jpg", Name = "Kog'Maw", Role = 2, SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/Kogmaw.png", SubRole = 1 },
                         new { CharacterId = 92, Aesthetic = 1, CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/Lucian/", Difficulty = 2, GameId = 2, Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lucian_0.jpg", Name = "Lucian", Role = 2, SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/Lucian.png", SubRole = 1 },
                         new { CharacterId = 93, Aesthetic = 1, CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/MissFortune/", Difficulty = 1, GameId = 2, Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MissFortune_0.jpg", Name = "Miss Fortune", Role = 2, SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/MissFortune.png", SubRole = 1 },
                         new { CharacterId = 94, Aesthetic = 1, CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/Quinn/", Difficulty = 2, GameId = 2, Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Quinn_0.jpg", Name = "Quinn", Role = 2, SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/Quinn.png", SubRole = 1 },

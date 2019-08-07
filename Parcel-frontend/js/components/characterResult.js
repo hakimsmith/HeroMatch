@@ -1,13 +1,15 @@
 export default function CharacterResult(characters, aesthetic){
     characters.sort(function(a,b){
+        if(b.aesthetic == aesthetic){
+            return 1
+        }
         return a.aesthetic - b.aesthetic
     })
+    console.log(characters);
     return `
    <div class = "char-results">
-
     ${characters.map(character =>{
-
-        if(character.aesthetic == aesthetic)
+        if(character.aesthetic == aesthetic && characters.indexOf(character) == 0)
         return `
         <div class= "char-single-result">
         <a href= "${character.characterUrl}" target="_blank">
@@ -17,7 +19,7 @@ export default function CharacterResult(characters, aesthetic){
 
         </div>
         `
-        if(character.aesthetic != aesthetic)
+        else
         return `
         <div class= "char-single-result">
         <a href= "${character.characterUrl}" target="_blank">
@@ -26,7 +28,7 @@ export default function CharacterResult(characters, aesthetic){
         </a>
 
         </div>
-        `     
+        `   
 
     }).join("")}
    </div>

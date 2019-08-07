@@ -136,33 +136,8 @@ function characterQuiz(){
             })
             
         }  
-        document.querySelector("#about").addEventListener("click", function(){ 
-        if(event.target.classList.contains('switch-game')){
-            console.log(difficulty)
-            difficulty = difficulty
-            role = role
-            subrole = subrole
-            aesthetic = aesthetic
-            let gameid = document.getElementById('charquiz_gameId').value
-
-            if(gameid == 1){
-                gameid = 2
-                document.getElementById("optional").innerHTML = AestheticOptions()
-            }
-            else{
-                gameid = 1
-                aesthetic = 0
-
-                ApiActions.getRequest('https://localhost:44399/api/characters/'
-                +gameid+'/'+difficulty +'/'+role+'/'+subrole , characters => {
-                    document.querySelector('#about').innerHTML = CharacterResult(characters, aesthetic);
-                    
-                })
-                
-            }
-        }
-    })
         
+    
         var coll = document.getElementsByClassName("Question_Head");
         var i;
         for (i = 0; i < coll.length; i++) {
@@ -180,6 +155,37 @@ function characterQuiz(){
             })
         };
     })
-    
+    document.querySelector("#about").addEventListener("click", function(){ 
+        if(event.target.classList.contains('switch-game')){
+            console.log(gameid)
+            difficulty = difficulty
+            role = role
+            subrole = subrole
+            aesthetic = aesthetic
+            let gameid = document.getElementById('charquiz_gameId').value
+
+            if(gameid == 2){
+                gameid = 1
+                aesthetic = 0
+
+                ApiActions.getRequest('https://localhost:44399/api/characters/'
+                +gameid+'/'+difficulty +'/'+role+'/'+subrole , characters => {
+                    document.querySelector('#about').innerHTML = CharacterResult(characters, aesthetic);
+                    document.querySelector('#quiz').style.display = 'none' 
+                })
+            }
+            else{
+                gameid = 2
+                aesthetic = 0
+
+                ApiActions.getRequest('https://localhost:44399/api/characters/'
+                +gameid+'/'+difficulty +'/'+role+'/'+subrole , characters => {
+                    document.querySelector('#about').innerHTML = CharacterResult(characters, aesthetic);
+                    document.querySelector('#quiz').style.display = 'none' 
+                })
+                
+            }
+        }
+        })
 }
 

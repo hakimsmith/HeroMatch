@@ -8,7 +8,7 @@ export default function CharacterResult(characters){
         <div class= "char-single-result">
         <a href= "${character.characterUrl}" target="_blank">
         <img src=${character.image}>            
-        <p>${character.name}</p>
+        <h3 class='name'>${character.name}</h3>
         </a>
 
         </div>

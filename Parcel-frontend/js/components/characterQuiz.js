@@ -2,8 +2,7 @@ export default function CharacterQuiz(gameId){
 return `
 
 <header>
-       <img src="Images/LOL-logo.JPG">
-       <h1>Character Quiz</h1>
+ <h1>Character Quiz</h1>
  </header>
 
 
@@ -12,10 +11,10 @@ return `
         <h2>How would you describe your level of experience with video games?</h2>
     </button>
     <div class=Question_Choices value='1'>
-        <button class='diffOption' value='1'>
-        <p>I have little to no experience with video games.</p></button>
-        <button class='diffOption' value='2'><p>I have some experience with video games.</p></button>
-        <button class='diffOption' value='3'><p>I have a lot of experience with video games.</p></button>
+        <button class='quiz-button diffOption' value='1'>
+        I have little to no experience with video games.</button>
+        <button class='quiz-button diffOption' value='2'>I have some experience with video games.</button>
+        <button class='quiz-button diffOption' value='3'>I have a lot of experience with video games.</button>
     </div>
 </div>
 
@@ -24,9 +23,9 @@ return `
         <h2>Which of these roles would be most appealing to you?</h2>
     </div>
     <div class=Question_Choices value='2'>
-        <button class='roleOption' value='1'>A lead role, where I decide the direction the team is headed.</button>
-        <button class='roleOption' value='2'>A damage role, where I focus on taking down a specific enemy.</button>
-        <button class='roleOption' value='3'>A supportive role, where I help others perform their roles optimally.</button>
+        <button class='quiz-button roleOption' value='1'>A lead role, where I decide the direction the team is headed.</button>
+        <button class='quiz-button roleOption' value='2'>A damage role, where I focus on taking down a specific enemy.</button>
+        <button class='quiz-button roleOption' value='3'>A supportive role, where I help others perform their roles optimally.</button>
     </div>
 </div>
 
@@ -40,7 +39,9 @@ return `
 </div>
 <div class=Question_Container id=optional style="display:none">
 </div>
+<div id = "submit">
 <button class='submit-button'>Submit</button>
+</div>
 <input id='charquiz_gameId' style='display:none' value = ${gameId}>  
 
 `

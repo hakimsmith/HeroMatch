@@ -64,25 +64,48 @@ ul {
     padding-bottom: 30px;
     font-size: 25px;
     justify-content: space-around;
-
+    color:black;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
     flex-flow: row;
     align-items: stretch;
-    background-color:black; 
+    background-color:#268C7E; 
     font-family: 'Grenze', serif;
+    list-style: none;
+
 } 
 /* //////////////////////////////////Style for collapsible */
 
 img{
-    width: 400px;
+    width: 300px;
 }
 
 .char-single-result{
+    padding-top: 10em;
     display: flex;
     justify-content: center;
+    text-align: center;
+}
+
+.char-single-result img{
+    width:300px;
+}
+.char-other-result{
+    padding-top: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 100px 150px;
+}
+
+.char-other-result img{
+    width:150px;
+}
+
+#otherPick{
+    
+    
 }
 
 h1 {
@@ -122,21 +145,7 @@ height: 800px;
 width: auto;
 height: 400px;
 }
-ul {
-padding-top:10px;
-padding-bottom: 30px;
-font-size: 25px;
-justify-content: space-around;
-top: 0;
-left: 0;
-width: 100%;
-display: flex;
-flex-flow: row;
-align-items: stretch;
-background:lightslategray;
-font-family: 'Grenze', serif;
-list-style: none;
-}
+
 ul li:hover {
     background-color: #222;
     color: lightslategray;

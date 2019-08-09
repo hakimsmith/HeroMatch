@@ -131,7 +131,7 @@ function characterQuiz(){
             
             ApiActions.getRequest('https://localhost:44399/api/characters/'
             +gameid+'/'+difficulty +'/'+role+'/'+subrole , characters => {
-                document.querySelector('#about').innerHTML = CharacterResult(characters, aesthetic);
+                document.querySelector('#quiz').innerHTML = CharacterResult(characters, aesthetic);
                 
             })
             

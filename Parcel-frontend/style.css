@@ -80,6 +80,11 @@ img{
     width: 400px;
 }
 
+.char-single-result{
+    display: flex;
+    justify-content: center;
+}
+
 h1 {
 font-size: 50px;
 font-weight: bolder;
@@ -285,4 +290,4 @@ transition: all 1.5s ease;
 
 
 
-
+/* ///////slide/// */

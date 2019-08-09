@@ -43,7 +43,8 @@ header {
     padding-top: 80px;
 }
 body {
-    background-image:url("./Images/green.jpg");
+     
+    background: url("./Images/BackG-76.png");
     background-color: black;
     background-blend-mode: screen;
     background-attachment: fixed;
@@ -51,6 +52,8 @@ body {
     color: #fff;
     padding: 2em;
 }
+
+
 
 #about, #quiz {
     width: auto;

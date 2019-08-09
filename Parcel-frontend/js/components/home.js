@@ -6,5 +6,7 @@ export default function Home(){
         <p>When you take the quiz, we first determine which game you'd like to play.</p>
         <p>Once we have your game choice, then we narrow down your character choices based on input from you. You can choose the #1 recommended hero, or choose one of the other available options.</p>
         <p>Then, play your game, and have fun!</p>
+
+        <button class='get-ana'>Get Ana</button>
     `
 }

@@ -8,6 +8,7 @@ import AllChars from './components/all-chars';
 import BaseStyle from './components/style-components/base-style';
 import AestheticOptions from './components/aesthetic-options'
 import apiActions from './api/api-actions';
+import SingleChar from './components/singlechar';
 
 console.log("app.js");
 
@@ -19,7 +20,7 @@ function pageBuild(){
     allChars();
     //baseStyle();
     takeQuiz();
-    
+    GetAna();
     
 };
 
@@ -185,4 +186,15 @@ function characterQuiz(){
         }
         })
 }
+
+function GetAna(){
+    document.getElementById('about').addEventListener('click', function(){
+        if (event.target.classList.contains('get-ana')){
+            apiActions.getRequest('https://overwatch-api.net/api/v1/hero/1', ana =>{
+                document.querySelector('#about').innerHTML = SingleChar(ana)
+            })
+        }
+    })
+}
+
 

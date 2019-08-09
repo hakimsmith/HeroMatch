@@ -54,6 +54,8 @@ function takeQuiz(){
         apiActions.getRequest('https://localhost:44399/api/game', games =>{
         body.innerHTML = TakeQuiz(games);
         document.getElementById('quiz').innerHTML = '';
+        // document.querySelector('#quiz').style.display = 'none' 
+
         })
     });
 }

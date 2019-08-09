@@ -1,5 +1,6 @@
 export default function Home(){
     return `
+  
     <h2>About</h2>
 
         <p>This website helps novice gamers navigate the process of finding a hero character to utilize in a game. You don't need to know anything about gaming or any particular game's terminologies in order to be served by this program. Just answer the questions, and we will take it from there!</p>

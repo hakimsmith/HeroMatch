@@ -52,9 +52,7 @@ function takeQuiz(){
     const quiz = document.getElementById('nav_quiz');
     quiz.addEventListener('click', function(){
         apiActions.getRequest('https://localhost:44399/api/game', games =>{
-        body.innerHTML = TakeQuiz(games);
-        document.getElementById('quiz').innerHTML = '';
-        // document.querySelector('#quiz').style.display = 'none' 
+        document.getElementById('quiz').innerHTML = TakeQuiz(games);
 
         })
     });

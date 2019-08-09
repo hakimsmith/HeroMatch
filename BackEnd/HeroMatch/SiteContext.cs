@@ -825,14 +825,14 @@ namespace HeroMatch
                 GameId = 2,
                 CharacterId = 57,
                 Name = "Wukong",
-                Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Wukong_0.jpg",
-                SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/Wukong.png",
-                CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/Wukong/",
+                Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_0.jpg",
+                SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/MonkeyKing.png",
+                CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/MonkeyKing/",
                 Difficulty = 2,
                 Role = 1,
                 SubRole = 2,
                 Aesthetic = 3,
-                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Wukong.json"
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/MonkeyKing.json"
 
             },
             new Character

@@ -1,20 +1,19 @@
 export default function AllChars(game){
-    return`
-    <div class = "char-all">
 
-    ${game.character.map (character => {
+    return `
+    <div class = "char-all">
+    ${game.character.map (singlechar => {
         return `
-        <div class= "char-show-all">
-        <a href= "${character.characterUrl}" target="_blank">
-        <img src=${character.smallImage}>            
-        <p>${character.name}</p>
-        </a>
+        <div class='single-char-box'>
+            <img class='single-char' src=${singlechar.smallImage}>            
+            <p class='single-char-name'>${singlechar.name}</p>
+            <input class='gameid' value=${singlechar.gameId} type='hidden'>
+            <input class='apiLocation' value=${singlechar.apiLocation} type='hidden'>
         </div>
         `
     }).join("")}
     </div>
     
-    }
     `
 
 }

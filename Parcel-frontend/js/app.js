@@ -9,6 +9,7 @@ import BaseStyle from './components/style-components/base-style';
 import AestheticOptions from './components/aesthetic-options'
 import apiActions from './api/api-actions';
 import SingleChar from './components/singlechar';
+import { isArray } from 'util';
 
 console.log("app.js");
 
@@ -62,6 +63,7 @@ function takeQuiz(){
 function allChars(){
     document.getElementById('about').addEventListener('click', function(){
         let gameId = 0;
+
         if(event.target.classList.contains('allChar')){
             gameId = event.target.value
             ApiActions.getRequest('https://localhost:44399/api/game/'+ gameId, game => {
@@ -69,6 +71,21 @@ function allChars(){
                 }
             )
         }
+
+        if(event.target.classList.contains('single-char')){
+            gameId = event.target.parentElement.querySelector('.gameid').value
+            let name = event.target.parentElement.querySelector('.single-char-name').value
+            console.log(event.target.parentElement.value)
+            let apiLocation = event.target.parentElement.querySelector('.apiLocation').value
+
+            apiActions.getRequest(apiLocation, char => {
+                console.log(char)
+                let chardata = Object.values(char.data)[0]
+                console.log(chardata)
+                document.querySelector('#about').innerHTML = SingleChar(chardata, gameId);
+            })
+        }
+
     })
 }
 

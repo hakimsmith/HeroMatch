@@ -74,15 +74,15 @@ function allChars(){
 
         if(event.target.classList.contains('single-char')){
             gameId = event.target.parentElement.querySelector('.gameid').value
-            let name = event.target.parentElement.querySelector('.single-char-name').value
-            console.log(event.target.parentElement.value)
+            //video = event.target.parentElement.querySelector('video').value
+            let image = event.target.parentElement.querySelector('.image').value
             let apiLocation = event.target.parentElement.querySelector('.apiLocation').value
 
             apiActions.getRequest(apiLocation, char => {
                 console.log(char)
                 let chardata = Object.values(char.data)[0]
                 console.log(chardata)
-                document.querySelector('#about').innerHTML = SingleChar(chardata, gameId);
+                document.querySelector('#about').innerHTML = SingleChar(chardata, gameId,video,image);
             })
         }
 

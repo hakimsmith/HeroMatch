@@ -58,6 +58,7 @@ body {
     width: auto;
     height: 400px;
 }
+
 nav ul {
     padding-top:10px;
     padding-bottom: 15px;
@@ -74,10 +75,11 @@ nav ul {
     font-family: 'Alegreya SC', serif;
     list-style: none;
 }  
-/* //////////////////////////////////Style for collapsible */
+
 nav ul li{
     font-variant: small-caps;
 }
+
 img{
     width: 300px;
 }

@@ -152,8 +152,11 @@ body {
 
 ul li:hover {
     background-color: #222;
-    color: lightslategray;
+    color: rgb(133, 139, 146);
     cursor: pointer;
+    transition-delay: .3s;
+    border-radius: 4px;
+    
 }
 
 .Question_Head {

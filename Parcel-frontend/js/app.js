@@ -40,9 +40,9 @@ function home(){
     const body = document.getElementById('about');
     const home = document.getElementById('nav_home');
     home.addEventListener('click', function(){
-        apiActions.getRequest('https://localhost:44399/api/game', games =>{
-        body.innerHTML = Home(games);
-        document.getElementById('quiz').innerHTML = '';
+        apiActions.getRequest('https://localhost:44399/api/game', home =>{
+        body.innerHTML = Home(home);
+        document.getElementById('quiz').innerHTML = Home(home);
         })
     });
 };

@@ -17,6 +17,7 @@ namespace HeroMatch.Models
         public string CharacterUrl { get; set; }
         public int Aesthetic { get; set; }
         public string ApiLocation { get; set; }
+        public string Video { get; set; }
 
 
         public virtual int GameId { get; set; }

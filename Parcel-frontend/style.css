@@ -1,64 +1,40 @@
 *{
     line-height: 1.6em;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
 } 
-nav ul{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
 h1 {
     font-size: 125px;
     font-weight: bold;
     font-family: 'Russo One', sans-serif;
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
 }
-
+        
 #HS{
     background-color: rgb(0, 0, 0);     
 }
-
+        
 h2,h3 {
     font-size: 30px;
     font-weight: bold;
     font-family: 'Russo One', sans-serif;
 }
-
+        
 span {
-    
+            
     font-size: 40px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
 }
-
+        
 header {
     display: flex;    
     flex-direction: column; 
     align-items: center;
     padding-top: 80px;
 }
-
-body {
-    
-    background: url("./Images/BackG-76.png");
-    background-color: black;
-    background-blend-mode: screen;
-    background-attachment: fixed;
-    background-size: 100%;
-    color: #fff;
-    padding: 2em;
-}
-
-#about, #quiz {
-    width: auto;
-    height: 400px;
-}
-
 nav ul {
     padding-top:10px;
     padding-bottom: 15px;
@@ -66,15 +42,33 @@ nav ul {
     justify-content: space-around;
     /* background-image:(#92dcbe #4c7062);  */
     background: linear-gradient(to bottom, #5be4ad, #1f312aa1 100%);         
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
     flex-flow: row;
     align-items: stretch;   
-  font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     list-style: none;
 }  
+
+
+body {    
+    background: url("./Images/BackG-76.png");
+    background-color: black;
+    background-blend-mode: screen;
+    background-attachment: fixed;
+    background-size: 100%;
+    color: #fff;
+    padding: 2em;
+    overflow: hidden;
+}
+
+#about, #quiz {
+    width: auto;
+    height: 400px;
+}
 
 nav ul li{
     font-variant: small-caps;
@@ -105,28 +99,6 @@ img{
 
 .char-other-result img{
     width:150px;
-}
-
-
-
-
-h2,h3 {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-
-
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 80px;
-}
-
-body {
-    padding: 2em;
-/* background-color: -webkit-linear-gradient(#C8A935 0%, #D7CB6E 100%); */
 }
 
 #quiz_body {
@@ -167,7 +139,6 @@ ul li:hover {
     justify-content: center;
     display: flex;
     border: 10px;
-/* border-color: white; */
 }
 
 .Question_Choices {
@@ -310,6 +281,77 @@ ul li:hover {
    color: white;
    font-weight: bold;
 }
+
+.slidewords{
+    display: inline-block;
+}
+.item1{
+	position: absolute;
+    display: block;
+    /* padding-left: 50px; */
+	top: 1em;  
+    width: 80%;  
+    padding-left: 40px;
+    font-size: 100px;
+	animation-duration: 12s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+.item2{
+	position: absolute;
+    display: block;
+    text-align: left;
+    right: 100px; 
+    top: 3em;  
+    width: 100%;  
+    font-size: 4em;
+	animation-duration: 12s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+.item3{
+    position: absolute;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;   
+	top: 3em;  
+    animation-duration: 12s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item1{
+	animation-name: anim-1;
+}
+
+.item2{
+	animation-name: anim-2;
+}
+.item3{
+	animation-name: anim-3;
+}
+
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 18%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 26% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+
+
 
 
 

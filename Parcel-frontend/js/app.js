@@ -8,6 +8,7 @@ import AllChars from './components/all-chars';
 import BaseStyle from './components/style-components/base-style';
 import AestheticOptions from './components/aesthetic-options'
 import apiActions from './api/api-actions';
+import About from './components/about';
 
 console.log("app.js");
 
@@ -19,6 +20,7 @@ function pageBuild(){
     allChars();
     //baseStyle();
     takeQuiz();
+    about();
     
     
 };
@@ -37,15 +39,24 @@ function pageBuild(){
 // }
 
 function home(){
-    const body = document.getElementById('about');
+    
     const home = document.getElementById('nav_home');
     home.addEventListener('click', function(){
         apiActions.getRequest('https://localhost:44399/api/game', home =>{
-        body.innerHTML = Home(home);
+        
         document.getElementById('quiz').innerHTML = Home(home);
         })
     });
 };
+function about(){
+    const about = document.getElementById('nav_about');
+    about.addEventListener('click', function(){
+        apiActions.getRequest('https://localhost:44399/api/game', about =>{
+            document.getElementById('quiz').innerHTML = About(about);
+        })
+    } )
+}
+
 
 function takeQuiz(){
     const body = document.getElementById('about');

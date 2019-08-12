@@ -44,7 +44,6 @@ function about(){
 
 
 function takeQuiz(){
-    const body = document.getElementById('about');
     const quiz = document.getElementById('nav_quiz');
     quiz.addEventListener('click', function(){
         apiActions.getRequest('https://localhost:44399/api/game', games =>{
@@ -152,14 +151,14 @@ function characterQuiz(){
         });
         }
     })
-    document.querySelector("#about").addEventListener("click", function(){ 
+    document.querySelector("#quiz").addEventListener("click", function(){ 
         if(event.target.classList.contains('switch-game')){
             console.log(gameid)
             difficulty = difficulty
             role = role
             subrole = subrole
             aesthetic = aesthetic
-            let gameid = document.getElementById('charquiz_gameId').value
+            let gameid = document.querySelector('.gameid').value
 
             if(gameid == 2){
                 gameid = 1
@@ -167,8 +166,7 @@ function characterQuiz(){
 
                 ApiActions.getRequest('https://localhost:44399/api/characters/'
                 +gameid+'/'+difficulty +'/'+role+'/'+subrole , characters => {
-                    document.querySelector('#about').innerHTML = CharacterResult(characters, aesthetic);
-                    document.querySelector('#quiz').style.display = 'none' 
+                    document.querySelector('#quiz').innerHTML = CharacterResult(characters, aesthetic);
                 })
             }
             else{
@@ -177,8 +175,7 @@ function characterQuiz(){
 
                 ApiActions.getRequest('https://localhost:44399/api/characters/'
                 +gameid+'/'+difficulty +'/'+role+'/'+subrole , characters => {
-                    document.querySelector('#about').innerHTML = CharacterResult(characters, aesthetic);
-                    document.querySelector('#quiz').style.display = 'none' 
+                    document.querySelector('#quiz').innerHTML = CharacterResult(characters, aesthetic);
                 })
                 
             }

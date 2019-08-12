@@ -1,7 +1,7 @@
 export default function CharacterQuiz(gameId){
 return `
-
-<header>
+<div class="entireQuestionBox">
+<header id="quizHeader">
 <h1>Character Quiz</h1>
 </header>
 
@@ -43,7 +43,7 @@ I have little to no experience with video games.</button>
 <button class='submit-button'>Submit</button>
 </div>
 <input id='charquiz_gameId' style='display:none' value = ${gameId}>  
-
+</div>
 
 `
 }

@@ -8,11 +8,16 @@ export default function About(){
    
 </header>
 <div class = "about">
+<div id="aboutTheGame">
     <h2>About</h2>
 
-        <p>This website helps novice gamers navigate the process of finding a hero character to utilize in a game. You don't need to know anything about gaming or any particular game's terminologies in order to be served by this program. Just answer the questions, and we will take it from there! When you take the quiz, we first determine which game you'd like to play. Once we have your game choice, then we narrow down your character choices based on input from you. You can choose the #1 recommended hero, or choose one of the other available options. Then, play your game, and have fun!</p>
-
-    <h2>Developers:</h2>
+        <p>This website helps novice gamers navigate the process of finding a hero character to utilize in a game. You don't need to know anything about gaming or any particular game's terminologies in order to be served by this program. Just answer the questions, and we will take it from there!</p>
+        
+        <p> When you take the quiz, we first determine which game you'd like to play. Once we have your game choice, then we narrow down your character choices based on input from you. You can choose the #1 recommended hero, or choose one of the other available options. Then, play your game, and have fun!</p>
+</div>
+<div id="devName">
+<h2 id="devTitle">Developers:</h2>
+<div id="developers">
         <p> Angel Davis</p>
         </br>
         <p> Megan Denman </p>
@@ -21,9 +26,11 @@ export default function About(){
         </br>     
         <p> Blair Griffith </p>
         </br>     
-        <p> Serio Rodriguez</p>
+        <p> Sergio Rodriguez</p>
         </br>     
         <p> Hakim Smith </p>
-    </div>    
+    </div>
+   </div>
+</div>    
     `
 }

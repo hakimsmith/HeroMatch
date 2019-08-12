@@ -45,7 +45,7 @@ header {
 
 body {
     
-    background: url("./Images/BackG-76.png");
+    background: url("./Images/BG.png");
     background-color: black;
     background-blend-mode: screen;
     background-attachment: fixed;
@@ -64,15 +64,16 @@ nav ul {
     padding-bottom: 15px;
     font-size: 25px;
     justify-content: space-around;
-    /* background-image:(#92dcbe #4c7062);  */
-    background: linear-gradient(to bottom, #5be4ad, #1f312aa1 100%);         
+    /* background-image:(#92dcbe #4c7062);  
+    /*background: linear-gradient(to bottom, #222, #a1cfbea1 100%);    */
+     background: #3c6b58;    
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
     flex-flow: row;
     align-items: stretch;   
-  font-family: 'Josefin Sans', sans-serif;
+   font-family: 'Josefin Sans', sans-serif;
     list-style: none;
 }  
 
@@ -142,15 +143,56 @@ body {
 }
 .about p{
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+    
+    }
+
+    #developers{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #aboutTheGame{
+        background: #222;
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 16px;
+    }
+    
+#devTitle{
+    display: flex;
+    justify-content: center;
+}
+
+    #devName{
+        margin-top: 3em;
+        width: 600px;
+        background: #222;
+        border-radius: 16px;
+
 }
 
 ul li:hover {
-    background-color: #222;
-    color: rgb(133, 139, 146);
+    background-color:#5be4ad;
+    color: rgb(16, 17, 19);
     cursor: pointer;
     transition-delay: .3s;
     border-radius: 4px;
     
+}
+#quizHeader > h1{
+    font-size: 25px;
 }
 
 .Question_Head {
@@ -168,6 +210,13 @@ ul li:hover {
     display: flex;
     border: 10px;
 /* border-color: white; */
+}
+
+.entireQuestionBox{
+    background-color: black;
+    border-radius: 16px;
+    width: 100%;
+    max-height: 300px;
 }
 
 .Question_Choices {
@@ -227,6 +276,7 @@ ul li:hover {
     background-color: black;
     width: 100px;
     height: 50px;
+    border-radius: 16px;
     font-weight: bold;
     font-family: 'Josefin Sans', sans-serif;
 }

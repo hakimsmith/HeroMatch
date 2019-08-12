@@ -74,7 +74,7 @@ function allChars(){
 
         if(event.target.classList.contains('single-char')){
             gameId = event.target.parentElement.querySelector('.gameid').value
-            //video = event.target.parentElement.querySelector('video').value
+            let video = event.target.parentElement.querySelector('.video').value
             let image = event.target.parentElement.querySelector('.image').value
             let apiLocation = event.target.parentElement.querySelector('.apiLocation').value
 

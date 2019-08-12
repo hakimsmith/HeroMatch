@@ -5,28 +5,29 @@ export default function CharacterResult(characters, aesthetic){
         }
         return a.aesthetic - b.aesthetic
     })
-    console.log(characters);
     return `
    <div class = "char-results">
     ${characters.map(character =>{
         if(character.aesthetic == aesthetic && characters.indexOf(character) == 0)
         return `
         <div class= "char-single-result">
-        <a href= "${character.characterUrl}" target="_blank">
-        <img src=${character.image}>            
-        <h3 class='name'>${character.name}</h3>
-        </a>
-
+            <img class='single-char' src=${character.image}>            
+            <p class='single-char-name'>${character.name}</p>
+            <input class='gameid' value=${character.gameId} type='hidden'>
+            <input class='apiLocation' value=${character.apiLocation} type='hidden'>
+            <input class='video' value=${character.video} type = 'hidden'>
+            <input class='image' value=${character.image} type ='hidden'>
         </div>
         `
         else
         return `
-        <div class= "char-other-result">
-        <a href= "${character.characterUrl}" target="_blank">
-        <img src=${character.smallImage}>            
-        <p>${character.name}</p>
-        </a>
-
+        <div class='char-other-result'>
+            <img class='single-char' src=${character.smallImage}>            
+            <p class='single-char-name'>${character.name}</p>
+            <input class='gameid' value=${character.gameId} type='hidden'>
+            <input class='apiLocation' value=${character.apiLocation} type='hidden'>
+            <input class='video' value=${character.video} type = 'hidden'>
+            <input class='image' value=${character.image} type ='hidden'>
         </div>
         `   
 

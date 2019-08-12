@@ -940,7 +940,7 @@ namespace HeroMatch
                 GameId = 2,
                 CharacterId = 61,
                 Name = "Dr. Mundo",
-                Image = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/DrMundo.png",
+                Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/DrMundo_0.jpg",
                 SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/DrMundo.png",
                 CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/DrMundo/",
                 Difficulty = 1,
@@ -2747,7 +2747,7 @@ namespace HeroMatch
                     Name = "Overwatch",
                     Description = "Overwatch is a colorful team-based shooter game starring a diverse cast of powerful heroes. Travel the world, build a team, and contest objectives in exhilarating 6v6 combat.",
                     Download = "https://us.shop.battle.net/en-us/product/overwatch?blzcmp=ow_buy_nav",
-                    Image = "https://stmed.net/sites/default/files/overwatch-hd-wallpapers-33472-8666477.jpg",
+                    Image = "https://1000logos.net/wp-content/uploads/2018/01/overwatch-logo.png",
                     Video = "https://www.youtube.com/watch?v=dushZybUYnM&t=9s"
 
                 },
@@ -2757,7 +2757,7 @@ namespace HeroMatch
                     Name = "League of Legends",
                     Description = "League of Legends is a fast-paced, competitive online game that blends the speed and intensity of real time strategy with role playing game elements. Two teams of powerful champions, each with a unique design and playstyle, battle head-to-head across multiple battlefields and game modes. With an ever-expanding roster of champions, frequent updates and a thriving tournament scene, League of Legends offers endless replayability for players of every skill level.",
                     Download = "https://signup.na.leagueoflegends.com/en/signup/index#/",
-                    Image = "http://mumumaki.com/wp-content/uploads/2018/07/League-Of-Legends-Wallpaper.jpg",
+                    Image = "https://www.riotgames.com/darkroom/800/6e3cb0c1ef68c36917c0ebc60e134f69:27e118b555199ad4738eaa74561e3e79/blank-uml-page-2.png",
                     Video = "https://www.youtube.com/watch?v=-157HBpPZ24"
                 }
 

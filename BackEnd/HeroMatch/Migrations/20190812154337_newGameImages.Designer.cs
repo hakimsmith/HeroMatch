@@ -3,14 +3,16 @@ using HeroMatch;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HeroMatch.Migrations
 {
     [DbContext(typeof(SiteContext))]
-    partial class SiteContextModelSnapshot : ModelSnapshot
+    [Migration("20190812154337_newGameImages")]
+    partial class newGameImages
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -113,7 +115,7 @@ namespace HeroMatch.Migrations
                         new { CharacterId = 58, Aesthetic = 1, ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/XinZhao.json", CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/XinZhao/", Difficulty = 1, GameId = 2, Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/XinZhao_0.jpg", Name = "Xin Zhao", Role = 1, SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/XinZhao.png", SubRole = 2, Video = "9l1lj_9Xg-E" },
                         new { CharacterId = 59, Aesthetic = 2, ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Yorick.json", CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/Yorick/", Difficulty = 2, GameId = 2, Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yorick_0.jpg", Name = "Yorick", Role = 1, SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/Yorick.png", SubRole = 2, Video = "RUVveKdiU_U" },
                         new { CharacterId = 60, Aesthetic = 2, ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Amumu.json", CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/Amumu/", Difficulty = 1, GameId = 2, Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Amumu_0.jpg", Name = "Amumu", Role = 1, SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/Amumu.png", SubRole = 1, Video = "1AmV5gTo1cA" },
-                        new { CharacterId = 61, Aesthetic = 2, ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/DrMundo.json", CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/DrMundo/", Difficulty = 1, GameId = 2, Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/DrMundo_0.jpg", Name = "Dr. Mundo", Role = 1, SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/DrMundo.png", SubRole = 1, Video = "0ekGEMNFtcY" },
+                        new { CharacterId = 61, Aesthetic = 2, ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/DrMundo.json", CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/DrMundo/", Difficulty = 1, GameId = 2, Image = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/DrMundo.png", Name = "Dr. Mundo", Role = 1, SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/DrMundo.png", SubRole = 1, Video = "0ekGEMNFtcY" },
                         new { CharacterId = 62, Aesthetic = 1, ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/JarvanIV.json", CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/JarvanIV/", Difficulty = 2, GameId = 2, Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/JarvanIV_0.jpg", Name = "Jarvan IV", Role = 1, SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/JarvanIV.png", SubRole = 1, Video = "RgOdf3x24qA" },
                         new { CharacterId = 63, Aesthetic = 2, ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Malphite.json", CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/Malphite/", Difficulty = 1, GameId = 2, Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malphite_0.jpg", Name = "Malphite", Role = 1, SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/Malphite.png", SubRole = 1, Video = "GOIAxk7Fat8" },
                         new { CharacterId = 64, Aesthetic = 2, ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Maokai.json", CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/Maokai/", Difficulty = 3, GameId = 2, Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Maokai_0.jpg", Name = "Maokai", Role = 1, SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/Maokai.png", SubRole = 1, Video = "Gw8f-VqAcQo" },

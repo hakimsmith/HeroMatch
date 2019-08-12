@@ -36,7 +36,10 @@ namespace HeroMatch
                     CharacterUrl = "https://playoverwatch.com/en-us/heroes/reinhardt/",
                     Difficulty = 1,
                     Role = 1,
-                    SubRole = 1
+                    SubRole = 1,
+                    ApiLocation = "https://overwatch-api.net/api/v1/hero/13",
+                    Video = "zLFbm6YckoU"
+
                 },
                 new Character
                 {
@@ -48,19 +51,24 @@ namespace HeroMatch
                     CharacterUrl = "https://playoverwatch.com/en-us/heroes/orisa/",
                     Difficulty = 2,
                     Role = 1,
-                    SubRole = 1
+                    SubRole = 1,
+                    ApiLocation = "https://overwatch-api.net/api/v1/hero/24",
+                    Video = "znEHH68unzA"
+
                 },
                 new Character
                 {
                     GameId = 1,
                     CharacterId = 3,
-                    Name = "D. Va",
+                    Name = "D.Va",
                     Image = "https://d1u1mce87gyfbn.cloudfront.net/hero/dva/full-portrait.png",
                     SmallImage = "https://d1u1mce87gyfbn.cloudfront.net/hero/dva/hero-select-portrait.png",
                     CharacterUrl = "https://playoverwatch.com/en-us/heroes/dva/",
                     Difficulty = 3,
                     Role = 1,
-                    SubRole = 1
+                    SubRole = 1,
+                    ApiLocation = "https://overwatch-api.net/api/v1/hero/3",
+                    Video = "jN3TISLTVyc"
                 },
                 new Character
                 {
@@ -72,7 +80,10 @@ namespace HeroMatch
                     CharacterUrl = "https://playoverwatch.com/en-us/heroes/Winston/",
                     Difficulty = 2,
                     Role = 1,
-                    SubRole = 1
+                    SubRole = 1,
+                    ApiLocation = "https://overwatch-api.net/api/v1/hero/20",
+                    Video = "JNJ42WCOxV0"
+
                 },
                 new Character
                 {
@@ -84,7 +95,10 @@ namespace HeroMatch
                     CharacterUrl = "https://playoverwatch.com/en-us/heroes/roadhog/",
                     Difficulty = 1,
                     Role = 1,
-                    SubRole = 2
+                    SubRole = 2,
+                    ApiLocation = "https://overwatch-api.net/api/v1/hero/14",
+                    Video = "5URzijwRPfk"
+
                 },
                 new Character
                 {
@@ -121,6 +135,9 @@ namespace HeroMatch
                     Difficulty = 3,
                     Role = 1,
                     SubRole = 2,
+                    ApiLocation = "https://overwatch-api.net/api/v1/hero/21",
+                    Video = "gTcKbsKDkWk"
+
                 },
                 new Character
                 {
@@ -132,7 +149,8 @@ namespace HeroMatch
                     CharacterUrl = "https://playoverwatch.com/en-us/heroes/ashe/",
                     Difficulty = 2,
                     Role = 2,
-                    SubRole = 1
+                    SubRole = 1,
+                    Video = "G8LbOecWGug"
                 },
                 new Character
                 {
@@ -144,7 +162,10 @@ namespace HeroMatch
                     CharacterUrl = "https://playoverwatch.com/en-us/heroes/mccree/",
                     Difficulty = 2,
                     Role = 2,
-                    SubRole = 1
+                    SubRole = 1,
+                    ApiLocation = "https://overwatch-api.net/api/v1/hero/8",
+                    Video = "kq4OlEDiCi8"
+
                 },
                 new Character
                 {
@@ -156,7 +177,10 @@ namespace HeroMatch
                     CharacterUrl = "https://playoverwatch.com/en-us/heroes/hanzo/",
                     Difficulty = 3,
                     Role = 2,
-                    SubRole = 1
+                    SubRole = 1,
+                    ApiLocation = "https://overwatch-api.net/api/v1/hero/5",
+                    Video = "oOVb9x0zd6M"
+
                 },
                 new Character
                 {
@@ -168,7 +192,10 @@ namespace HeroMatch
                     CharacterUrl = "https://playoverwatch.com/en-us/heroes/widowmaker/",
                     Difficulty = 3,
                     Role = 2,
-                    SubRole = 1
+                    SubRole = 1,
+                    ApiLocation = "https://overwatch-api.net/api/v1/hero/19",
+                    Video = "fvPp6XbbTb0"
+
                 },
                 new Character
                 {
@@ -180,7 +207,10 @@ namespace HeroMatch
                     CharacterUrl = "https://playoverwatch.com/en-us/heroes/soldier-76/",
                     Difficulty = 1,
                     Role = 2,
-                    SubRole = 1
+                    SubRole = 1,
+                    ApiLocation = "https://overwatch-api.net/api/v1/hero/15",
+                    Video = "V_0eqEbG7yA"
+
                 },
                 new Character
                 {
@@ -192,7 +222,10 @@ namespace HeroMatch
                     CharacterUrl = "https://playoverwatch.com/en-us/heroes/reaper/",
                     Difficulty = 1,
                     Role = 2,
-                    SubRole = 2
+                    SubRole = 2,
+                    ApiLocation = "https://overwatch-api.net/api/v1/hero/12",
+                    Video = "uK4WSF0rCcM"
+
                 },
                 new Character
                 {
@@ -205,6 +238,9 @@ namespace HeroMatch
                     Difficulty = 3,
                     Role = 2,
                     SubRole = 2,
+                    ApiLocation = "https://overwatch-api.net/api/v1/hero/23",
+                    Video = "bcrPuSRYA4U"
+
                 },
                 new Character
                 {
@@ -217,6 +253,8 @@ namespace HeroMatch
                     Difficulty = 3,
                     Role = 2,
                     SubRole = 2,
+                    ApiLocation = "https://overwatch-api.net/api/v1/hero/4",
+                    Video = "lYOjIDhJIG0"
                 },
                 new Character
                 {
@@ -228,7 +266,8 @@ namespace HeroMatch
                     CharacterUrl = "https://playoverwatch.com/en-us/heroes/doomfist/",
                     Difficulty = 2,
                     Role = 2,
-                    SubRole = 2
+                    SubRole = 2,
+                    Video = "-pLpQwjGAnA"
                 },
                 new Character
                 {
@@ -240,7 +279,10 @@ namespace HeroMatch
                     CharacterUrl = "https://playoverwatch.com/en-us/heroes/tracer/",
                     Difficulty = 2,
                     Role = 2,
-                    SubRole = 2
+                    SubRole = 2,
+                    ApiLocation = "https://overwatch-api.net/api/v1/hero/18",
+                    Video = "_SvYmsNCWsw"
+
                 },
                 new Character
                 {
@@ -252,7 +294,10 @@ namespace HeroMatch
                     CharacterUrl = "https://playoverwatch.com/en-us/heroes/torbjorn/",
                     Difficulty = 2,
                     Role = 2,
-                    SubRole = 3
+                    SubRole = 3,
+                    ApiLocation = "https://overwatch-api.net/api/v1/hero/17",
+                    Video = "Ev0ZgWhGVuo"
+
                 },
                 new Character
                 {
@@ -264,7 +309,10 @@ namespace HeroMatch
                     CharacterUrl = "https://playoverwatch.com/en-us/heroes/symmetra/",
                     Difficulty = 3,
                     Role = 2,
-                    SubRole = 3
+                    SubRole = 3,
+                    ApiLocation = "https://overwatch-api.net/api/v1/hero/16",
+                    Video = "-0TPg0rgmBo"
+
                 },
                 new Character
                 {
@@ -276,7 +324,10 @@ namespace HeroMatch
                     CharacterUrl = "https://playoverwatch.com/en-us/heroes/pharah/",
                     Difficulty = 2,
                     Role = 2,
-                    SubRole = 3
+                    SubRole = 3,
+                    ApiLocation = "https://overwatch-api.net/api/v1/hero/11",
+                    Video = "ks-mLJS0pe8"
+
                 },
                 new Character
                 {
@@ -288,7 +339,10 @@ namespace HeroMatch
                     CharacterUrl = "https://playoverwatch.com/en-us/heroes/mei/",
                     Difficulty = 2,
                     Role = 2,
-                    SubRole = 3
+                    SubRole = 3,
+                    ApiLocation = "https://overwatch-api.net/api/v1/hero/9",
+                    Video = "J4hB88uMY8k"
+
                 },
                 new Character
                 {
@@ -300,7 +354,10 @@ namespace HeroMatch
                     CharacterUrl = "https://playoverwatch.com/en-us/heroes/junkrat/",
                     Difficulty = 1,
                     Role = 2,
-                    SubRole = 3
+                    SubRole = 3,
+                    ApiLocation = "https://overwatch-api.net/api/v1/hero/6",
+                    Video = "mFGQG8I68h8"
+
                 },
                 new Character
                 {
@@ -313,6 +370,8 @@ namespace HeroMatch
                     Difficulty = 1,
                     Role = 2,
                     SubRole = 3,
+                    ApiLocation = "https://overwatch-api.net/api/v1/hero/2",
+                    Video = "L4D1C7JU7ts"
                 },
                 new Character
                 {
@@ -324,7 +383,8 @@ namespace HeroMatch
                     CharacterUrl = "https://playoverwatch.com/en-us/heroes/baptiste/",
                     Difficulty = 2,
                     Role = 3,
-                    SubRole = 1
+                    SubRole = 1,
+                    Video = "ZfWgcjeG83E"
                 },
                 new Character
                 {
@@ -337,6 +397,7 @@ namespace HeroMatch
                     Difficulty = 1,
                     Role = 3,
                     SubRole = 1,
+                    Video = "msFq8_IRebI"
                 },
                 new Character
                 {
@@ -348,7 +409,9 @@ namespace HeroMatch
                     CharacterUrl = "https://playoverwatch.com/en-us/heroes/ana/",
                     Difficulty = 3,
                     Role = 3,
-                    SubRole = 1
+                    SubRole = 1,
+                    ApiLocation = "https://overwatch-api.net/api/v1/hero/1",
+                    Video = "ZcCGKrYgr0k"
 
                 },
                 new Character
@@ -361,7 +424,10 @@ namespace HeroMatch
                     CharacterUrl = "https://playoverwatch.com/en-us/heroes/lucio/",
                     Difficulty = 2,
                     Role = 3,
-                    SubRole = 2
+                    SubRole = 2,
+                    ApiLocation = "https://overwatch-api.net/api/v1/hero/7",
+                    Video = "ywTNgR3ldFc"
+
 
                 },
                 new Character
@@ -374,7 +440,10 @@ namespace HeroMatch
                     CharacterUrl = "https://playoverwatch.com/en-us/heroes/mercy/",
                     Difficulty = 1,
                     Role = 3,
-                    SubRole = 2
+                    SubRole = 2,
+                    ApiLocation = "https://overwatch-api.net/api/v1/hero/10",
+                    Video = "-l-ytDZWVFI"
+
                 },
                 new Character
                 {
@@ -386,7 +455,8 @@ namespace HeroMatch
                     CharacterUrl = "https://playoverwatch.com/en-us/heroes/moira/",
                     Difficulty = 2,
                     Role = 3,
-                    SubRole = 2
+                    SubRole = 2,
+                    Video = "8tLopqeL9s8"
                 },
                 new Character
                 {
@@ -398,13 +468,16 @@ namespace HeroMatch
                     CharacterUrl = "https://playoverwatch.com/en-us/heroes/zenyatta/",
                     Difficulty = 3,
                     Role = 3,
-                    SubRole = 2
+                    SubRole = 2,
+                    ApiLocation = "https://overwatch-api.net/api/v1/hero/22",
+                    Video = "SBXpKdmJBLU"
+
                 },
                 
             new Character
             {
                 GameId = 2,
-                CharacterId = 32 ,
+                CharacterId = 32,
                 Name = "Aatrox",
                 Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg",
                 SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/Aatrox.png",
@@ -412,7 +485,9 @@ namespace HeroMatch
                 Difficulty = 2, 
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Aatrox.json",
+                Video = "0iiGWVhUqLA"
 
             },
             new Character
@@ -426,7 +501,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Camille.json",
+                Video = "YaNANTQH0zc"
 
             },
              new Character
@@ -440,7 +517,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Chogath.json",
+                Video = "GJ8QI_7puvU"
 
              },
             new Character
@@ -454,7 +533,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Darius.json",
+                Video = "0M15wr-5O18"
 
             },
             new Character
@@ -468,7 +549,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Fiora.json",
+                Video = "YRyGvsGbHnM"
 
             },
             new Character
@@ -482,7 +565,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Gangplank.json",
+                Video = "3kysDbC-NTo"
 
             },
             new Character
@@ -496,7 +581,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 1,
                 SubRole =2,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Garen.json",
+                Video = "Q7oyW6LjxrA"
 
             },
             new Character
@@ -510,7 +597,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Gnar.json",
+                Video = "4Qu3rhWGq0s"
 
             },
             new Character
@@ -524,7 +613,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Hecarim.json",
+                Video = "6DVGJm-u6To"
 
             },
             new Character
@@ -538,7 +629,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Illaoi.json",
+                Video = "UFkCDRlb9FA"
 
             },
             new Character
@@ -552,7 +645,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Irelia.json",
+                Video = "0iiGWVhUqLA"
 
             },
             new Character
@@ -566,7 +661,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Jax.json",
+                Video = "B18qApcVCRg"
 
             },
             new Character
@@ -580,7 +677,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Kled.json",
+                Video = "Pz145kVa-4w"
 
             },
             new Character
@@ -594,7 +693,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/LeeSin.json",
+                Video = "e6SleHuJjLo"
 
             },
             new Character
@@ -608,7 +709,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/MasterYi.json",
+                Video = "RJo0YzTyvXw"
 
             },
             new Character
@@ -622,8 +725,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 2
-
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Mordekaiser.json",
+                Video = "GcR1_McnJbU"
             },
             new Character
             {
@@ -636,7 +740,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Olaf.json",
+                Video = "YuC3ZUY88d8"
 
             },
             new Character
@@ -650,7 +756,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Pantheon.json",
+                Video = "h2yjpxzTNvs"
 
             },
             new Character
@@ -664,7 +772,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/RekSai.json",
+                Video = "bmurGIqiPgg"
 
             },
             new Character
@@ -678,7 +788,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Renekton.json",
+                Video = "IDXEHgsLfeM"
 
             },
             new Character
@@ -692,7 +804,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Shyvana.json",
+                Video = "Z66n3UYfPE4"
 
             },
             new Character
@@ -706,7 +820,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Singed.json",
+                Video = "ZOpT__qwjdQ"
 
             },
             new Character
@@ -720,8 +836,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 1
-
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Tryndamere.json",
+                Video = "VmXEnxyVcs0"
             },
             new Character
             {
@@ -734,7 +851,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Urgot.json",
+                Video = "AEd1aq77tBo"
 
             },
             new Character
@@ -748,7 +867,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Vi.json",
+                Video = "vp3ZrRJz-ZY"
 
             },
             new Character
@@ -756,13 +877,15 @@ namespace HeroMatch
                 GameId = 2,
                 CharacterId = 57,
                 Name = "Wukong",
-                Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Wukong_0.jpg",
-                SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/Wukong.png",
-                CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/Wukong/",
+                Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_0.jpg",
+                SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/MonkeyKing.png",
+                CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/MonkeyKing/",
                 Difficulty = 2,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/MonkeyKing.json",
+                Video = "k1zAhC5aeQs"
 
             },
             new Character
@@ -776,7 +899,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/XinZhao.json",
+                Video = "9l1lj_9Xg-E"
 
             },
             new Character
@@ -790,7 +915,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 1,
                 SubRole = 2,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Yorick.json",
+                Video = "RUVveKdiU_U"
 
             },
             new Character
@@ -804,8 +931,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 1,
                 SubRole = 1,
-                Aesthetic = 2
-
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Amumu.json",
+                Video = "1AmV5gTo1cA"
             },
             new Character
             {
@@ -818,8 +946,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 1,
                 SubRole = 1,
-                Aesthetic = 2
-
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/DrMundo.json",
+                Video = "0ekGEMNFtcY"
             },
             new Character
             {
@@ -832,7 +961,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 1,
                 SubRole = 1,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/JarvanIV.json",
+                Video = "RgOdf3x24qA"
 
             },
             new Character
@@ -846,8 +977,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 1,
                 SubRole = 1,
-                Aesthetic = 2
-
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Malphite.json",
+                Video = "GOIAxk7Fat8"
             },
             new Character
             {
@@ -860,7 +992,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 1,
                 SubRole = 1,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Maokai.json",
+                Video = "Gw8f-VqAcQo"
 
             },
             new Character
@@ -874,8 +1008,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 1,
                 SubRole = 1,
-                Aesthetic = 3
-
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Nasus.json",
+                Video = "pnbtna-Qvns"
             },
             new Character
             {
@@ -888,7 +1023,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 1,
                 SubRole = 1,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Nunu.json",
+                Video = "xaaJbFxpfyE"
 
             },
             new Character
@@ -902,7 +1039,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 1,
                 SubRole = 1,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Ornn.json",
+                Video = "WaJbuSNlVMU"
 
             },
             new Character
@@ -916,7 +1055,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 1,
                 SubRole = 1,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Poppy.json",
+                Video = "Oe-NJKTgz7c"
 
             },
             new Character
@@ -930,7 +1071,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 1,
                 SubRole = 1,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Rammus.json",
+                Video = "aeU2b9s-ZVw"
 
             },
             new Character
@@ -944,7 +1087,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 1,
                 SubRole = 1,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Sejuani.json",
+                Video = "bOWoAktkGQg"
 
             },
             new Character
@@ -958,7 +1103,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 1,
                 SubRole = 1,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Shen.json",
+                Video = "JIIE0LCvGpo"
 
             },
             new Character
@@ -972,7 +1119,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 1,
                 SubRole = 1,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Sion.json",
+                Video = "4mWWFC9SRfA"
 
             },
             new Character
@@ -986,7 +1135,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 1,
                 SubRole = 1,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Skarner.json",
+                Video = "vLxbEDJykcI"
 
             },
             new Character
@@ -1000,7 +1151,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 1,
                 SubRole = 1,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Trundle.json",
+                Video = "cg0-Kw9Iozw"
 
             },
             new Character
@@ -1014,7 +1167,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 1,
                 SubRole = 1,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Udyr.json",
+                Video = "dK4PwnV59ik"
 
             },
             new Character
@@ -1028,7 +1183,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 1,
                 SubRole = 1,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Volibear.json",
+                Video = "pVrWNNnhSww"
 
             },
             new Character
@@ -1042,7 +1199,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 1,
                 SubRole = 1,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Warwick.json",
+                Video = "Rro20bR4jnQ"
 
             },
             new Character
@@ -1056,7 +1215,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 1,
                 SubRole = 1,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Zac.json",
+                Video = "lr8kHe4vqZQ"
 
             },
             new Character
@@ -1070,8 +1231,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 2,
                 SubRole = 1,
-                Aesthetic = 1
-
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Ashe.json",
+                Video = "mSbMQ5xDnEg"
             },
             new Character
             {
@@ -1084,7 +1246,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 1,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Caitlyn.json",
+                Video = "KFNFY6-gaDA"
 
             },
             new Character
@@ -1098,7 +1262,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 1,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Corki.json",
+                Video = "ABYix52iBj0"
 
             },
             new Character
@@ -1112,7 +1278,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 1,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Draven.json",
+                Video = "h5zyGj4Z0Sg"
 
             },
             new Character
@@ -1126,7 +1294,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 1,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Ezreal.json",
+                Video = "0dGYt0Ibw94"
 
             },
             new Character
@@ -1140,7 +1310,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 2,
                 SubRole = 1,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Graves.json",
+                Video = "BWzyB4xe7Y8"
 
             },
             new Character
@@ -1154,7 +1326,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 1,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Jayce.json",
+                Video = "p2YuyBZ_zMU"
 
             },
             new Character
@@ -1168,7 +1342,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 1,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Jhin.json",
+                Video = "QvNw0A-D0T0"
 
             },
             new Character
@@ -1182,7 +1358,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 1,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Jinx.json",
+                Video = "KN3OYwP8nHE"
 
             },
             new Character
@@ -1196,7 +1374,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 1,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Kaisa.json",
+                Video = "yLNMZt3FvFo"
 
             },
             new Character
@@ -1210,7 +1390,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 1,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Kalista.json",
+                Video = "XCR-tMpKtt8"
 
             },
             new Character
@@ -1224,7 +1406,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 1,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Kindred.json",
+                Video = "h0Pwn7G-eLE"
 
             },
             new Character
@@ -1238,7 +1422,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 2,
                 SubRole = 1,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/KogMaw.json",
+                Video = "_uZ1ltl-qPM"
 
             },
             new Character
@@ -1252,7 +1438,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 1,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Lucian.json",
+                Video = "2rIiuLXXGEg"
 
             },
             new Character
@@ -1266,7 +1454,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 2,
                 SubRole = 1,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/MissFortune.json",
+                Video = "vZh_hN-62YA"
 
             },
             new Character
@@ -1280,7 +1470,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 1,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Quinn.json",
+                Video = "O9eVLrcih9s"
 
             },
             new Character
@@ -1294,7 +1486,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 1,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Sivir.json",
+                Video = "6NkXkpHnf30"
 
             },
             new Character
@@ -1308,7 +1502,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 2,
                 SubRole = 1,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Tristana.json",
+                Video = "633CHC6TTYY"
 
             },
             new Character
@@ -1322,7 +1518,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 2,
                 SubRole = 1,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Twitch.json",
+                Video = "cFtH_wFJBLs"
 
             },
             new Character
@@ -1336,7 +1534,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 1,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Varus.json",
+                Video = "twiHstUjNkY"
 
             },
             new Character
@@ -1350,7 +1550,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 1,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Vayne.json",
+                Video = "gZDJqpFspmg"
 
             },
             new Character
@@ -1364,7 +1566,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 1,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Xayah.json",
+                Video = "CgQfr8bMNN8"
 
             },
             new Character
@@ -1378,7 +1582,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 1,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Yasuo.json",
+                Video = "fkM20LgOdKQ"
 
             },
             new Character
@@ -1392,7 +1598,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 2,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Akali.json",
+                Video = "b-s2YVbRP8I"
 
             },
             new Character
@@ -1406,7 +1614,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 2,
                 SubRole = 2,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Diana.json",
+                Video = "H7WSLWcACiw"
 
             },
             new Character
@@ -1420,7 +1630,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 2,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Ekko.json",
+                Video = "Cx-9Oi2xstA"
 
             },
             new Character
@@ -1434,7 +1646,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 2,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Elise.json",
+                Video = "mOz4uDKs2dM"
 
             },
             new Character
@@ -1448,7 +1662,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 2,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Evelynn.json",
+                Video = "ep_U4U6YW4E"
 
             },
             new Character
@@ -1462,7 +1678,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 2,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Fizz.json",
+                Video = "ATbmKP9RoXI"
 
             },
             new Character
@@ -1476,8 +1694,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 2,
-                Aesthetic = 2
-
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Kassadin.json",
+                Video = "s1LJa9lZtJ4"
             },
             new Character
             {
@@ -1490,7 +1709,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 2,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Katarina.json",
+                Video = "soCg5RbgYIA"
 
             },
             new Character
@@ -1504,9 +1725,12 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 2,
                 SubRole = 2,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Kayn.json",
+                Video = "pPaauwI6G5s"
 
-            },new Character
+            },
+            new Character
             {
                 GameId = 2,
                 CharacterId = 111,
@@ -1517,7 +1741,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 2,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Khazix.json",
+                Video = "jKLK9zFiVII"
 
             },
             new Character
@@ -1531,7 +1757,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 2,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Leblanc.json",
+                Video = "we5LawDUcCM"
 
             },
             new Character
@@ -1545,7 +1773,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 2,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Nidalee.json",
+                Video = "KZjRgm4mF_U"
 
             },
             new Character
@@ -1559,7 +1789,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 2,
                 SubRole = 2,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Nocturne.json",
+                Video = "owrwt97AH54"
 
             },
             new Character
@@ -1573,8 +1805,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 2,
-                Aesthetic = 1
-
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Qiyana.json",
+                Video = "3ECXeoLlR3I"
             },
             new Character
             {
@@ -1587,7 +1820,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 2,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Rengar.json",
+                Video = "gbHGFazlpCA"
 
             },
             new Character
@@ -1601,7 +1836,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 2,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Shaco.json",
+                Video = "Q9m48jiVWL4"
 
             },
             new Character
@@ -1615,7 +1852,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 2,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Talon.json",
+                Video = "eKdX7aB3TRk"
 
             },
             new Character
@@ -1629,7 +1868,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 2,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Zed.json",
+                Video = "2DFtlNGzMIA"
 
             },
             new Character
@@ -1643,7 +1884,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Ahri.json",
+                Video = "hlalkAUkwqE"
 
             },
             new Character
@@ -1657,7 +1900,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Anivia.json",
+                Video = "8Syose1O568"
 
             },
             new Character
@@ -1671,8 +1916,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 1
-
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Annie.json",
+                Video = "aUTU-GnxVuM"
             },
             new Character
             {
@@ -1685,7 +1931,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/AurelionSol.json",
+                Video = "HM520graePQ"
 
             },
             new Character
@@ -1699,7 +1947,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Azir.json",
+                Video = "zqH4AA-KEgQ"
 
             },
             new Character
@@ -1714,6 +1964,8 @@ namespace HeroMatch
                 Role = 2,
                 SubRole = 3,
                 Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Brand.json",
+                Video = "vvuAw6KNn2E"
 
             },
             new Character
@@ -1727,7 +1979,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 3, 
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Cassiopeia.json",
+                Video = "neQNvEyuhPU"
 
             },
             new Character
@@ -1741,7 +1995,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Fiddlesticks.json",
+                Video = "uc_-ms5ADhk"
 
             },
             new Character
@@ -1755,8 +2011,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 1
-
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Gragas.json",
+                Video = "et2GPLnZxGo"
             },
             new Character
             {
@@ -1769,8 +2026,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 2
-
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Heimerdinger.json",
+                Video = "PY2q3aA1NYo"
             },
             new Character
             {
@@ -1783,7 +2041,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Karthus.json",
+                Video = "zSKw3m7JGvg"
 
             },
             new Character
@@ -1797,7 +2057,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Kayle.json",
+                Video = "kn-Y6jawdHM"
 
             },
             new Character
@@ -1811,7 +2073,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Kennen.json",
+                Video = "ZmYVifYPFsY"
 
             },
             new Character
@@ -1825,8 +2089,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 2
-
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Lissandra.json",
+                Video = "xsCp5lBceTA"
             },
             new Character
             {
@@ -1839,7 +2104,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Lux.json",
+                Video = "pJB6JWDESWU"
 
             },
             new Character
@@ -1853,7 +2120,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Malzahar.json",
+                Video = "PC5ScnEH-Rc"
 
             },
             new Character
@@ -1867,7 +2136,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Neeko.json",
+                Video = "bPj48lmrynU"
 
             },
             new Character
@@ -1881,7 +2152,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Orianna.json",
+                Video = "EUpTRoSQEX4"
 
             },
             new Character
@@ -1895,7 +2168,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Rumble.json",
+                Video = "Dghwqj_Qddc"
 
             },
             new Character
@@ -1909,7 +2184,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Ryze.json",
+                Video = "qNk6uNCLuDo"
 
             },
             new Character
@@ -1923,7 +2200,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Swain.json",
+                Video = "Utt-sd2FJNY"
             },
             new Character
             {
@@ -1936,8 +2215,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 1
-
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Sylas.json",
+                Video = "3U4WdutoYbI"
             },
             new Character
             {
@@ -1950,7 +2230,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Syndra.json",
+                Video = "YqI7N2R8tx4"
 
             },
             new Character
@@ -1964,7 +2246,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Taliyah.json",
+                Video = "3-XQ0Jb2MRs"
 
             },
             new Character
@@ -1978,7 +2262,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Teemo.json",
+                Video = "Qj48qHM1MXE"
 
             },
             new Character
@@ -1992,7 +2278,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/TwistedFate.json",
+                Video = "B8Ai_Aw-5fc"
 
             },
             new Character
@@ -2006,8 +2294,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 1
-
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Veigar.json",
+                Video = "cmOWdbEiYr0"
             },
             new Character
             {
@@ -2020,7 +2309,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic  = 2
+                Aesthetic  = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Viktor.json",
+                Video = "B18qApcVCRg"
 
             },
             new Character
@@ -2034,7 +2325,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Vladimir.json",
+                Video = "eiUgrEWRx6M"
 
             },
             new Character
@@ -2048,7 +2341,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Xerath.json",
+                Video = "2v5MmuMJ2qU"
 
             },
             new Character
@@ -2062,7 +2357,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 2,
                 SubRole = 3,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Ziggs.json",
+                Video = "kNabvLyUXzI"
 
             },
             new Character
@@ -2075,8 +2372,10 @@ namespace HeroMatch
                 CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/Zoe/",
                 Difficulty = 3,
                 Role = 2,
-                SubRole = 3    ,
-                Aesthetic = 1
+                SubRole = 3,
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Zoe.json",
+                Video = "HhwRz47Kk2Y"
             },
             new Character
             {
@@ -2089,7 +2388,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 3,
                 SubRole = 1,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Bard.json",
+                Video = "-tNDoXIYptk"
             },
             new Character
             {
@@ -2102,7 +2403,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 3,
                 SubRole = 1,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Alistar.json",
+                Video = "utf6x70S6Fw"
             },
             new Character
             {
@@ -2115,7 +2418,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 3,
                 SubRole = 1,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Blitzcrank.json",
+                Video = "WtmMC23DdT0"
             },
             new Character
             {
@@ -2128,7 +2433,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 3,
                 SubRole = 1,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Braum.json",
+                Video = "ajUghBnxZQA"
             },
             new Character
             {
@@ -2141,7 +2448,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 3,
                 SubRole = 1,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Galio.json",
+                Video = "t3BFQMW2Lfw"
             },
             new Character
             {
@@ -2154,7 +2463,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 3,
                 SubRole = 1,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Karma.json",
+                Video = "lWIj3IRz8DI"
             },
             new Character
             {
@@ -2167,7 +2478,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 3,
                 SubRole = 1,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Leona.json",
+                Video = "oViu5Pv_wwY"
             },
             new Character
             {
@@ -2180,7 +2493,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 3,
                 SubRole = 1,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Morgana.json",
+                Video = "izqj7s6DnM0"
             },
             new Character
             {
@@ -2193,7 +2508,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 3,
                 SubRole = 1,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Nautilus.json",
+                Video = "IyOeyjwZT28"
             },
             new Character
             {
@@ -2206,7 +2523,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 3,
                 SubRole = 1,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Pyke.json",
+                Video = "g2mara8nFVE"
             },
             new Character
             {
@@ -2219,7 +2538,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 3,
                 SubRole = 1,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/TahmKench.json",
+                Video = "VYlOFKLmiHA"
             },
             new Character
             {
@@ -2232,7 +2553,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 3,
                 SubRole = 1,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Thresh.json",
+                Video = "Sv95nBi7ulQ"
             },
             new Character
             {
@@ -2245,7 +2568,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 3,
                 SubRole = 1,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Velkoz.json",
+                Video = "IWA2C8tUG-g"
             },
             new Character
             {
@@ -2258,7 +2583,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 3,
                 SubRole = 1,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Zilean.json",
+                Video = "uI65iptLVkw"
             },
             new Character
             {
@@ -2271,7 +2598,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 3,
                 SubRole = 1,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Zyra.json",
+                Video = "v9DLY0Qrcm4"
             },
             new Character
             {
@@ -2284,7 +2613,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 3,
                 SubRole = 2,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Ivern.json",
+                Video = "Y-gsY5oAsL0"
             },
             new Character
             {
@@ -2297,7 +2628,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 3,
                 SubRole = 2,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Janna.json",
+                Video = "m40BisZsth4"
             },
             new Character
             {
@@ -2310,7 +2643,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 3,
                 SubRole = 2,
-                Aesthetic = 2
+                Aesthetic = 2,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Lulu.json",
+                Video = "R1Gs1D2rUIM"
             },
             new Character
             {
@@ -2323,7 +2658,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 3,
                 SubRole = 2,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Nami.json",
+                Video = "wd_Sz59QTVk"
             },
             new Character
             {
@@ -2336,7 +2673,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 3,
                 SubRole = 2,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Rakan.json",
+                Video = "HYWNOHM1fSk"
             },
             new Character
             {
@@ -2349,7 +2688,9 @@ namespace HeroMatch
                 Difficulty = 1,
                 Role = 3,
                 SubRole = 2,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Sona.json",
+                Video = "JP0A3wLfFBg"
             },
             new Character
             {
@@ -2362,7 +2703,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 3,
                 SubRole = 2,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Soraka.json",
+                Video = "KJ6f1nsoUTs"
             },
             new Character
             {
@@ -2375,7 +2718,9 @@ namespace HeroMatch
                 Difficulty = 2,
                 Role = 3,
                 SubRole = 2,
-                Aesthetic = 1
+                Aesthetic = 1,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Taric.json",
+                Video = "Y91qo99osLI"
             },
             new Character
             {
@@ -2388,7 +2733,9 @@ namespace HeroMatch
                 Difficulty = 3,
                 Role = 3,
                 SubRole = 2,
-                Aesthetic = 3
+                Aesthetic = 3,
+                ApiLocation = "http://ddragon.leagueoflegends.com/cdn/9.15.1/data/en_US/champion/Yuumi.json",
+                Video = "TYkvBijQccA"
             }
             );
 

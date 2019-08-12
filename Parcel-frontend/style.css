@@ -73,13 +73,21 @@ nav ul {
     display: flex;
     flex-flow: row;
     align-items: stretch;   
-   font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     list-style: none;
 }  
 
 nav ul li{
     font-variant: small-caps;
-  font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+}
+ul li:hover {
+    background-color:#5be4ad;
+    color: rgb(16, 17, 19);
+    cursor: pointer;
+    transition-delay: .3s;
+    border-radius: 4px;
+                    
 }
 
 img{
@@ -98,36 +106,21 @@ img{
 }
 
 .char-other-result{
-    padding-top: 3em;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 150px 100px 150px;
+    /* padding-top: 1em; */
+    display: flex;   
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .char-other-result img{
     width:150px;
 }
 
-
-
-
-h2,h3 {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-
-
-header {
+.single-char-group{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 80px;
-}
+    flex-direction: row;
+    justify-items: center;
 
-body {
-    padding: 2em;
-/* background-color: -webkit-linear-gradient(#C8A935 0%, #D7CB6E 100%); */
 }
 
 #quiz_body {
@@ -137,10 +130,7 @@ body {
     height: 800px;
 }
 
-#about, #quiz {
-    width: auto;
-    height: 400px;
-}
+
 .about p{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.5em;
@@ -183,21 +173,13 @@ body {
 
 }
 
-ul li:hover {
-    background-color:#5be4ad;
-    color: rgb(16, 17, 19);
-    cursor: pointer;
-    transition-delay: .3s;
-    border-radius: 4px;
-    
-}
 #quizHeader > h1{
     font-size: 25px;
 }
 
 .Question_Head {
-    background-color: black;
-    color: #3C3D37;
+    background-color: black; 
+    color: lightgrey;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -224,9 +206,10 @@ ul li:hover {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    background-color: black;
+    background-color: black;  
     outline: none;
     justify-content: center;
+    
 }
 
 .quiz-button{
@@ -273,7 +256,7 @@ ul li:hover {
 
 .quiz {
     color: white;
-    background-color: black;
+    /* background-color: black; */
     width: 100px;
     height: 50px;
     border-radius: 16px;

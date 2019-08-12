@@ -11,6 +11,8 @@
     <Compile Remove="Migrations\20190802183607_lazyLoading.Designer.cs" />
     <Compile Remove="Migrations\20190805173128_fixedXinZhaoCharURL.cs" />
     <Compile Remove="Migrations\20190805173128_fixedXinZhaoCharURL.Designer.cs" />
+    <Compile Remove="Migrations\20190812154026_newGameImages.cs" />
+    <Compile Remove="Migrations\20190812154026_newGameImages.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

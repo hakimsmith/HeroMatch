@@ -2747,7 +2747,7 @@ namespace HeroMatch
                     Name = "Overwatch",
                     Description = "Overwatch is a colorful team-based shooter game starring a diverse cast of powerful heroes. Travel the world, build a team, and contest objectives in exhilarating 6v6 combat.",
                     Download = "https://us.shop.battle.net/en-us/product/overwatch?blzcmp=ow_buy_nav",
-                    Image = "https://1000logos.net/wp-content/uploads/2018/01/overwatch-logo.png",
+                    Image = "https://blizzard.gamespress.com/cdn/propressroom/Content/Artwork/Eva/BlizzardLive/artwork/2017/11/02182055-e94a78e3-9eae-4423-a3e8-59ecf50039dd/OW_Logo_Full_White.png?w=1024&maxheight=4096&mode=pad&format=png",
                     Video = "https://www.youtube.com/watch?v=dushZybUYnM&t=9s"
 
                 },

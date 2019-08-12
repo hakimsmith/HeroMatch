@@ -940,7 +940,7 @@ namespace HeroMatch
                 GameId = 2,
                 CharacterId = 61,
                 Name = "Dr. Mundo",
-                Image = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/DrMundo.png",
+                Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/DrMundo_0.jpg",
                 SmallImage = "https://ddragon.leagueoflegends.com/cdn/9.15.1/img/champion/DrMundo.png",
                 CharacterUrl = "https://na.leagueoflegends.com/en/game-info/champions/DrMundo/",
                 Difficulty = 1,

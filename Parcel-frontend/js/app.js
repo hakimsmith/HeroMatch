@@ -5,11 +5,11 @@ import CharacterQuiz from './components/characterQuiz';
 import CharacterResult from './components/characterResult';
 import SubroleOptions from './components/subrole-options';
 import AllChars from './components/all-chars';
-import BaseStyle from './components/style-components/base-style';
 import AestheticOptions from './components/aesthetic-options'
 import apiActions from './api/api-actions';
+import About from './components/about';
 import SingleChar from './components/singlechar';
-import { isArray } from 'util';
+
 
 console.log("app.js");
 
@@ -19,43 +19,37 @@ function pageBuild(){
     home();
     characterQuiz();
     allChars();
-    //baseStyle();
     takeQuiz();
-    GetAna();
-    
+    about();
 };
 
-// function baseStyle(){
-//     document.getElementById('nav_home').addEventListener('click', function(){
-
-        
-//             apiActions.getRequest('https://localhost:44399/api/game', games =>{
-//                 document.innerHTML = BaseStyle(Home(games));
-
-//             }
-//             )
-    
-//     })
-// }
-
 function home(){
-    const body = document.getElementById('about');
+    
     const home = document.getElementById('nav_home');
     home.addEventListener('click', function(){
-        apiActions.getRequest('https://localhost:44399/api/game', games =>{
-        body.innerHTML = Home(games);
-        document.getElementById('quiz').innerHTML = '';
+        apiActions.getRequest('https://localhost:44399/api/game', home =>{
+        
+        document.getElementById('quiz').innerHTML = Home(home);
         })
     });
 };
+function about(){
+    const about = document.getElementById('nav_about');
+    about.addEventListener('click', function(){
+        apiActions.getRequest('https://localhost:44399/api/game', about =>{
+            document.getElementById('quiz').innerHTML = About(about);
+        })
+    } )
+}
+
 
 function takeQuiz(){
     const body = document.getElementById('about');
     const quiz = document.getElementById('nav_quiz');
     quiz.addEventListener('click', function(){
         apiActions.getRequest('https://localhost:44399/api/game', games =>{
-        body.innerHTML = TakeQuiz(games);
-        document.getElementById('quiz').innerHTML = '';
+        document.getElementById('quiz').innerHTML = TakeQuiz(games);
+
         })
     });
 }
@@ -149,7 +143,7 @@ function characterQuiz(){
             
             ApiActions.getRequest('https://localhost:44399/api/characters/'
             +gameid+'/'+difficulty +'/'+role+'/'+subrole , characters => {
-                document.querySelector('#about').innerHTML = CharacterResult(characters, aesthetic);
+                document.querySelector('#quiz').innerHTML = CharacterResult(characters, aesthetic);
                 
             })
             
@@ -202,16 +196,6 @@ function characterQuiz(){
             }
         }
         })
-}
-
-function GetAna(){
-    document.getElementById('about').addEventListener('click', function(){
-        if (event.target.classList.contains('get-ana')){
-            apiActions.getRequest('https://overwatch-api.net/api/v1/hero/1', ana =>{
-                document.querySelector('#about').innerHTML = SingleChar(ana)
-            })
-        }
-    })
 }
 
 

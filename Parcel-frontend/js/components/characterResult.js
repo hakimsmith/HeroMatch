@@ -21,7 +21,7 @@ export default function CharacterResult(characters, aesthetic){
         `
         else
         return `
-        <div class= "char-single-result">
+        <div class= "char-other-result">
         <a href= "${character.characterUrl}" target="_blank">
         <img src=${character.smallImage}>            
         <p>${character.name}</p>

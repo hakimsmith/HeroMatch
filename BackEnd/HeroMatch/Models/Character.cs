@@ -16,6 +16,8 @@ namespace HeroMatch.Models
         public int SubRole { get; set; }
         public string CharacterUrl { get; set; }
         public int Aesthetic { get; set; }
+        public string ApiLocation { get; set; }
+        public string Video { get; set; }
 
 
         public virtual int GameId { get; set; }

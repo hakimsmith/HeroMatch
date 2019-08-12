@@ -2,7 +2,7 @@ export default function CharacterQuiz(gameId){
 return `
 <div class="entireQuestionBox">
     <header id="quizHeader">
-     <h1>Character Quiz</h1>
+     <h1>Find Your Hero</h1>
     </header>
 
 

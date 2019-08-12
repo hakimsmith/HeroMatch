@@ -5,6 +5,5 @@ export default function Home(){
         <span>Find Your Gaming Character</span>   
     </header>
 
-<button id="tQuiz">Take Quiz</button>
     `
 }

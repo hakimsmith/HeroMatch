@@ -42,7 +42,7 @@ export default function CharacterResult(characters, aesthetic){
     }).join("")}
    </div>
    <div class='buttons'>
-   <button value='${characters[0].gameId }' class="allChar quiz-button">View All Characters</button>
+   <button value='${characters[0].gameId }' class="allChar quiz-button">View All Characters For This Game</button>
    <button class='switch-game quiz-button'>View Similar Characters for Other Game</button>
    </div>
     `

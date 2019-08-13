@@ -95,7 +95,19 @@ function allChars(){
         SingleCharHandler();
 
     })
-}
+        document.getElementById('quiz').addEventListener('click', function(){
+            let gameId = 0;
+    
+            if(event.target.classList.contains('single-game-chars')){
+                gameId = event.target.value
+                ApiActions.getRequest('https://localhost:44399/api/game/'+ gameId, game => {
+                        document.querySelector('#quiz').innerHTML = AllChars(game);
+                    }
+                )
+            }
+        })
+    }
+
 
 function characterQuiz(){
     let difficulty = 0;
@@ -107,6 +119,17 @@ function characterQuiz(){
         if(event.target.classList.contains('select-game')){
             console.log('event')
             let gameId = event.target.parentElement.querySelector('.select-game__id').value
+            document.getElementById('quiz').innerHTML = CharacterQuiz(gameId);
+            if(gameId == 2){
+                document.getElementById('optional').innerHTML= AestheticOptions();
+                document.getElementById('optional').style.display="block";
+            }
+        }
+    })
+    document.addEventListener('click', function(){
+        if(event.target.classList.contains('single-quiz')){
+            console.log('event')
+            let gameId = event.target.parentElement.querySelector('.single-quiz').value
             document.getElementById('quiz').innerHTML = CharacterQuiz(gameId);
             if(gameId == 2){
                 document.getElementById('optional').innerHTML= AestheticOptions();

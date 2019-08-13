@@ -1,19 +1,18 @@
 export default function About(){
     return `
     <header>
-    <h1>Hero Match</h1>
+    <h1>HeroMatch</h1>
    
 
-        <span>Find Your Gaming Character</span>   
    
 </header>
 <div class = "about">
 <div id="aboutTheGame">
     <h2>About</h2>
 
-        <p>This website helps novice gamers navigate the process of finding a hero character to utilize in a game. You don't need to know anything about gaming or any particular game's terminologies in order to be served by this program. Just answer the questions, and we will take it from there!</p>
-        
-        <p> When you take the quiz, we first determine which game you'd like to play. Once we have your game choice, then we narrow down your character choices based on input from you. You can choose the #1 recommended hero, or choose one of the other available options. Then, play your game, and have fun!</p>
+    <p>HeroMatch is designed to help gamers of all skill levels find characters to play in popular online games.</p>
+    
+    <p>&nbsp; &nbsp; Once you've chosen a game, you will answer some questions about your preferences (e.g. difficulty, role on a team). Then, HeroMatch will provide you with a character that best suits your answers, along with a list of other similar characters. From there, you can select a hero to learn more about them and see why HeroMatch picked them for you.</p>
 </div>
 <div id="devName">
 <h2 id="devTitle">Developers:</h2>

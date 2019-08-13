@@ -2748,7 +2748,7 @@ namespace HeroMatch
                     Description = "Overwatch is a colorful team-based shooter game starring a diverse cast of powerful heroes. Travel the world, build a team, and contest objectives in exhilarating 6v6 combat.",
                     Download = "https://us.shop.battle.net/en-us/product/overwatch?blzcmp=ow_buy_nav",
                     Image = "https://blizzard.gamespress.com/cdn/propressroom/Content/Artwork/Eva/BlizzardLive/artwork/2017/11/02182055-e94a78e3-9eae-4423-a3e8-59ecf50039dd/OW_Logo_Full_White.png?w=1024&maxheight=4096&mode=pad&format=png",
-                    Video = "https://www.youtube.com/watch?v=dushZybUYnM&t=9s"
+                    Video = "dushZybUYnM"
 
                 },
                 new Game
@@ -2758,7 +2758,7 @@ namespace HeroMatch
                     Description = "League of Legends is a fast-paced, competitive online game that blends the speed and intensity of real time strategy with role playing game elements. Two teams of powerful champions, each with a unique design and playstyle, battle head-to-head across multiple battlefields and game modes. With an ever-expanding roster of champions, frequent updates and a thriving tournament scene, League of Legends offers endless replayability for players of every skill level.",
                     Download = "https://signup.na.leagueoflegends.com/en/signup/index#/",
                     Image = "https://www.riotgames.com/darkroom/800/6e3cb0c1ef68c36917c0ebc60e134f69:27e118b555199ad4738eaa74561e3e79/blank-uml-page-2.png",
-                    Video = "https://www.youtube.com/watch?v=-157HBpPZ24"
+                    Video = "-157HBpPZ24"
                 }
 
                 );

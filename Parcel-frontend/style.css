@@ -15,7 +15,7 @@ h1 {
     font-size: 125px;
     font-weight: bold;
     font-family: 'Russo One', sans-serif;
-    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+    text-shadow: 0 1px 0 #999, 0 2px 0 #000, 0 3px 0 #000, 0 4px 0 #000000;
 }
 
 #HS{
@@ -33,7 +33,7 @@ span {
     font-size: 40px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
-    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+    text-shadow: 0 1px 0 #999, 0 2px 0 #000, 0 3px 0 #000, 0 4px 0 #000000;
 }
 
 header {
@@ -60,8 +60,7 @@ body {
 }
 
 nav ul {
-    padding-top:2px;
-    padding-bottom: 2px;
+    
     font-size: 25px;
     justify-content: space-around;
     /* background-image:(#92dcbe #4c7062);  
@@ -80,29 +79,58 @@ nav ul {
 nav ul li{
     font-variant: small-caps;
     font-family: 'Josefin Sans', sans-serif;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 ul li:hover {
     background-color:#5be4ad;
     color: rgb(16, 17, 19);
     cursor: pointer;
-    transition-delay: .3s;
-    border-radius: 4px;
-                    
 }
 
 img{
     width: 300px;
 }
 
-.char-single-result{
-    padding-top: 10em;
-    display: flex;
-    justify-content: center;
+.result-head{
+    font-size: 60px;
     text-align: center;
 }
 
+.char-single-result{
+    padding-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr 80%;
+    grid-template-rows: 1fr 10%;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,.7);
+}
+
+.char-single-result h2{
+    margin-left: 1em;
+}
+
+.single-char-name{
+    grid-column-start: 2;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    text-align: right;
+}
+
 .char-single-result img{
-    width:300px;
+    width:70%;
+    border-radius: 10px;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 2em;
+    justify-self: right;
+    margin-right: 2em;
+}
+
+.char-results{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .char-other-result{
@@ -190,7 +218,7 @@ img{
 }
 
 .Question_Head {
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.0); 
     color: lightgrey;
     cursor: pointer;
     padding: 18px;
@@ -203,7 +231,8 @@ img{
     justify-content: center;
     display: flex;
     border: 10px;
-    border-radius: 16px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
 }
 
 
@@ -214,21 +243,30 @@ img{
     max-height: 300px;
 }
 
+.Question_Container{
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 1em;  
+    margin-bottom: 2em;
+}
+
 .Question_Choices {
     padding: 0 10px;
     max-height: 0;
     overflow: hidden;
-    /* transition: max-height 0.2s ease-out; */
-    background-color: rgba(0, 0, 0, 0.5);  
+    transition: max-height 0.2s ease-out;
+    /* background-color: rgba(0, 0, 0, 0.5);   */
     outline: none;
     display: flex;
     flex-flow: column;  
     align-items: center;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
 }
 
 .quiz-button{
   font-family: 'Josefin Sans', sans-serif;
-    margin: 20px;
+    margin: 10px;
     cursor: pointer;
     position: relative;
     font-size: 25px;
@@ -237,7 +275,7 @@ img{
     padding: 15px 25px;
     width: 700px;
     
-    /* border-radius: 10%; */
+    border-radius: 5px;
     background-color: #111;
     color: lightgrey;
     border: solid 2px;
@@ -251,8 +289,9 @@ img{
 }
 
 .quiz-button:focus{
-    opacity: 0.75;
-    color: lightgray;
+    background-color: lightgrey;
+    color: black;
+    border-color: lightgrey;
     outline: none;
 }
 
@@ -292,48 +331,9 @@ img{
     text-align: center;
 }
 
-.submit-button {
-    display: inline-block;
-  font-family: 'Josefin Sans', sans-serif;
-    margin: 0, auto;
-    cursor: pointer;
-    position: relative;
-    font-size: 20px;
-    z-index: 0;
-    cursor: pointer;
-    padding: 15px 20px;
-    border-width: 10px;
-    border-radius: 50%;
-    background: transparent;
-    color: black;
-    border-color: transparent;
-
+.submit-button{
+    width: 20%;
 }
-.submit-button:hover{
-    color: lightgray;
-    opacity: 0.75;
-    outline: none;
-    }
-
-.submit-button:focus{
-    opacity: 0.75;
-    color: lightgray;
-    outline: none;
-    }
-
-.submit-button:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    /*   background-image: linear-gradient(73deg,           transparent 0%, orange 100%); */
-    content: '';
-    border-radius: 6px;
-    transform: skewX(-30deg);
-    /* background-image: linear-gradient(#727A7E,  #B8BABD, #A3A3AC,  #D8DDDF ); */
-} 
 
 .games {
     display: flex;    
@@ -348,9 +348,38 @@ img{
     align-items: center;
 }  
 
-.pick {
-    text-decoration: underline;
+.choose{
+    font-size: 80px;
 } 
+
+.main-flex{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0,0,0,.7);
+    border-radius: 10px;
+    padding: 2em;
+    /* box-shadow: 0px 0px 10px 10px #111; */
+}
+.main-flex img{
+    width: 400px;
+    align-self: center;
+}
+.main-flex .select{
+    display: flex;
+    height: 100%;
+    border: solid rgba(0,0,0,0);
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.main-flex .select:hover{
+    cursor: pointer;
+    border: solid #fff;
+    border-radius: 10px;
+    background: rgba(0,0,0,.5);
+}
 
 .name {
    text-decoration: none;
@@ -430,7 +459,16 @@ img{
     font-family: 'Josefin-sans', sans-serif;
 }
 
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.allChar, .switch-game{
+    align-items: center;
+    width: 50%;
+}
 
 
 

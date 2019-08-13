@@ -1,5 +1,6 @@
 export default function AllGames(games){
     return `
+    <div class="lotsGames">
     <h1 id="allGames">Games</h1>
     <div class='allGames'>
     
@@ -13,7 +14,7 @@ export default function AllGames(games){
             `;
         })
         .join("")}
-    
+    </div>
     </div>        
     `
 }

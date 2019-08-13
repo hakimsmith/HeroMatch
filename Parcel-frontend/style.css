@@ -151,6 +151,11 @@ img{
     justify-items: center;
 
 }
+.imgNameOther{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .single-char{
     float: left;
@@ -274,8 +279,7 @@ img{
     z-index: 0;
     cursor: pointer;
     padding: 15px 25px;
-    width: 700px;
-    
+    width: 700px;    
     border-radius: 5px;
     background-color: #111;
     color: lightgrey;
@@ -332,7 +336,7 @@ img{
     text-align: center;
 }
 
-.submit-button{
+.submit-button {
     width: 20%;
 }
 
@@ -513,16 +517,12 @@ img{
     width: 50%;
 }
 
-.slideStuff{
-    /* overflow: hidden; */
-}
+
 .item1{
 	position: absolute;
-    display: block;
-    /* padding-left: 50px; */
+    display: flex;
 	top: 1em;  
     width: 80%;  
-    padding-left: 40px;
     font-size: 100px;
 	animation-duration: 12s;
 	animation-timing-function: ease-in-out;
@@ -566,7 +566,7 @@ img{
 
 @keyframes anim-1 {
 	0%, 8.3% { left: -100%; opacity: 0; }
-  8.3%,25% { left: 25%; opacity: 1; }
+  8.3%,25% { left: 17%; opacity: 1; }
   33.33%, 100% { left: 110%; opacity: 0; }
 }
 
@@ -582,5 +582,69 @@ img{
   100% { left: 110%; opacity: 0; }
 }
 
+.gameDescription{
+    width: 85%;
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.iframe{
+    height: 260px;
+    padding-top: 50px;
+}
+.gameimg{
+    padding-right: 60px;
+    padding-top: 30px;
+}
+.image-and-desc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.download{
+    font-family: 'Josefin Sans', sans-serif;
+      margin: 10px;
+      cursor: pointer;
+      position: relative;
+      font-size: 25px;
+      z-index: 0;
+      cursor: pointer;
+      padding: 15px 25px;
+      width: 700px;    
+      border-radius: 5px;
+      background-color: #111;
+      color: lightgrey;
+      border: solid 2px;
+  }
+  
+  .download:hover{
+      color: black;
+      outline: none;
+      background-color: lightgrey;
+      border-color: lightgrey;
+  }
+  .random-char{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      padding-bottom: 30px;
+  }
+  .imageAndName{
+      display: flex;
+      flex-direction: row;
+      justify-items: center;
+      
+  }
+  .single-char{
+      width: 100px;
+  }
+  .imageAndName{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
 
 

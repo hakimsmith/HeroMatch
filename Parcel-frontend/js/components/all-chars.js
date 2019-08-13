@@ -4,9 +4,11 @@ export default function AllChars(game){
     <div class = "char-all">
     ${game.character.map (singlechar => {
         return `
-        <div class='single-char-box'>
+        <div class='char-all-box'>
+            <div class='imageAndName'>
             <img class='single-char' src=${singlechar.smallImage}>            
             <p class='single-char-name'>${singlechar.name}</p>
+            </div>
             <input class='gameid' value=${singlechar.gameId} type='hidden'>
             <input class='apiLocation' value=${singlechar.apiLocation} type='hidden'>
             <input class='video' value=${singlechar.video} type = 'hidden'>

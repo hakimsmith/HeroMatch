@@ -8,8 +8,9 @@ import AllChars from './components/all-chars';
 import AestheticOptions from './components/aesthetic-options'
 import apiActions from './api/api-actions';
 import About from './components/about';
-import SingleChar from './components/singlechar';
-import SingleCharHandler from './components/single-char-handler'
+import SingleCharHandler from './components/single-char-handler';
+import AllGames from './components/allGames';
+import SingleGame from './components/singleGame';
 
 console.log("app.js");
 
@@ -21,6 +22,8 @@ function pageBuild(){
     allChars();
     takeQuiz();
     about();
+    allGames();
+    singleGame();
 };
 
 function home(){
@@ -41,7 +44,31 @@ function about(){
         })
     } )
 }
+function allGames(){
+    const games = document.getElementById('nav_games');
+    games.addEventListener('click', function(){
+        apiActions.getRequest('https://localhost:44399/api/game', games =>{
+        document.getElementById('quiz').innerHTML = AllGames(games);
 
+        })
+    });
+}
+
+function singleGame(){
+    document.getElementById('quiz').addEventListener('click', function(){
+        
+        if (event.target.classList.contains('gameName')){
+            let gameId = event.target.parentElement.querySelector('.game__id').value
+            console.log(gameId);
+            ApiActions.getRequest('https://localhost:44399/api/game/'
+            +gameId, game => {
+                document.getElementById('quiz').innerHTML = SingleGame(game);
+                
+            })
+        }           
+                
+    })
+}
 
 function takeQuiz(){
     const quiz = document.getElementById('nav_quiz');

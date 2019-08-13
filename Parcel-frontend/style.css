@@ -280,20 +280,27 @@ img{
     background-color: #111;
     color: lightgrey;
     border: solid 2px;
+
+    display: flex;
 }
 
 .quiz-button:hover{
     color: black;
     outline: none;
-    background-color: lightgrey;
-    border-color: lightgrey;
+    background-color: #5be4ad;
+    border-color: #5be4ad;
+}
+
+.quiz-button:hover *{
+    filter: invert(0%)
 }
 
 .quiz-button:focus{
-    background-color: lightgrey;
+    background-color: #5be4ad;
     color: black;
-    border-color: lightgrey;
+    border-color: #5be4ad;
     outline: none;
+    
 }
 
 .quiz-button:before {
@@ -306,6 +313,12 @@ img{
     content: '';
     border-radius: 6px;
     background-color: transparent;
+}
+
+.quiz-button img{
+    width: 100px;
+    height: 100px;
+    filter: invert(100%)
 }
 
 .quiz {

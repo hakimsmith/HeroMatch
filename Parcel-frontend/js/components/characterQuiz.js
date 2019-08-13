@@ -22,9 +22,9 @@ return `
             <h2>Which of these roles would be most appealing to you?</h2>
         </div>
         <div class=Question_Choices value='2'>
-            <button class='quiz-button roleOption' value='1'>A lead role, where I decide the direction the team is headed.</button>
-            <button class='quiz-button roleOption' value='2'>A damage role, where I focus on taking down a specific enemy.</button>
-            <button class='quiz-button roleOption' value='3'>A supportive role, where I help others perform their roles optimally.</button>
+            <button class='quiz-button roleOption' value='1'><img src='https://i.imgur.com/fGNN8j1.png'> A lead role, where I decide the direction the team is headed.</button>
+            <button class='quiz-button roleOption' value='2'><img src="https://i.imgur.com/SERrZIq.png"> A damage role, where I focus on taking down a specific enemy.</button>
+            <button class='quiz-button roleOption' value='3'><img src="https://i.imgur.com/noSGFOw.png"> A supportive role, where I help others perform their roles optimally.</button>
         </div>
     </div>
 

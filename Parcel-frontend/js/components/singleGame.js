@@ -7,7 +7,7 @@ export default function SingleGame(game){
             <p> ${game.description}</p>
             <img src = ${game.image}>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/${game.video}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <a href = "${game.download}" target ='_blank'>                                 
+            <a href = "${game.download}" target ='_blank'> Download Game <a>                               
             </div>
             
         </div>

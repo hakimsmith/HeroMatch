@@ -677,7 +677,7 @@ img{
 }
 
 @keyframes anim-2 {
-	0%, 33.33% { left: -100%; opacity: 0; }
+	0.1%, 33.33% { left: -100%; opacity: 0; }
   41.63%, 58.29% { left: 18%; opacity: 1; }
   66.66%, 100% { left: 110%; opacity: 0; }
 }

@@ -293,7 +293,7 @@ img{
 }
 
 .quiz-button:hover *{
-    filter: invert(0%)
+    filter: invert(0%);
 }
 
 .quiz-button:focus{
@@ -301,7 +301,9 @@ img{
     color: black;
     border-color: #5be4ad;
     outline: none;
-    
+}
+.quiz-button:focus *{
+    filter: invert(0%);
 }
 
 .quiz-button:before {

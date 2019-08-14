@@ -575,7 +575,7 @@ img{
     display: flex;
 	top: 1em;  
     width: 80%;  
-    padding-left: 271px;
+    padding-left: 304px;
     font-size: 100px;
 	animation-duration: 12s;
 	animation-timing-function: ease-in-out;
@@ -586,7 +586,7 @@ img{
     display: flex;
 	top: 1em;  
     width: 80%;  
-    padding-left: 271px;
+    padding-left: 304px;
     font-size: 100px;
 	animation-duration: 12s;
 	animation-timing-function: ease-in-out;
@@ -683,9 +683,9 @@ img{
 }
 
 @keyframes anim-3 {
-	0%, 60% { left: -150%; opacity: 0; }
-  /* 74.96%, 91.62% { left: 35%; opacity: 1; } */
-  /* 100% { left: 110%; opacity: 0; } */
+	0%, 60% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 10%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
 }
 @keyframes anim-4 {
 	0%, 8.3% { left: -100%; opacity: 0; }
@@ -700,9 +700,9 @@ img{
 }
 
 @keyframes anim-6 {
-	0%, 60% { left: -30%; opacity: 0; }
-  /* 74.96%, 91.62% { left: 35%; opacity: 1; }
-  100% { left: 110%; opacity: 0; } */
+	0%, 60% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 60%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
 }
 
 .slider-button{

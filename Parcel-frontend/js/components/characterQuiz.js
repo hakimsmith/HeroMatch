@@ -56,14 +56,13 @@ return `
     <div class=Question_Container id=optional style="display:none">
     
     </div>
-        <a href="#">
-        <div id = "submit">
-        </a>
-        <div class='QuestionSeparator' id="QuestionHead5"></div>
-            <button class='quiz-button submit-button'>Submit</button>
-        </div>
-    <input id='charquiz_gameId' style='display:none' value = ${gameId}>  
-</div>
+    <div id = "submit">
+    <div class='QuestionSeparator' id="QuestionHead5"></div>
+    <a href="#top">
+        <button class='quiz-button submit-button'>Submit</button>
+    </a>
+        <input id='charquiz_gameId' style='display:none' value = ${gameId}>  
+    </div>
 
 `
 }

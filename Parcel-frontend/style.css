@@ -285,6 +285,15 @@ img{
     
 }
 
+.take-quiz{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    width: 25%;
+    font-size: 40px;
+}
+
 .quiz-button:hover{
     color: black;
     outline: none;
@@ -595,6 +604,19 @@ img{
 	0%, 26% { left: -100%; opacity: 0; }
   74.96%, 91.62% { left: 35%; opacity: 1; }
   100% { left: 110%; opacity: 0; }
+}
+
+.slider-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 14.5em;
+    width: 95%
+}
+
+.home-quiz-button{
+    width: 20%;
+    font-size: 30px;
+    margin-top: 4.5em;
 }
 
 

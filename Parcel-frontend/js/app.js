@@ -228,7 +228,6 @@ function characterQuiz(){
 
             if(gameid == 2){
                 gameid = 1
-                aesthetic = 0
 
                 ApiActions.getRequest('https://localhost:44399/api/characters/'
                 +gameid+'/'+difficulty +'/'+role+'/'+subrole , characters => {
@@ -237,7 +236,6 @@ function characterQuiz(){
             }
             else{
                 gameid = 2
-                aesthetic = 0
 
                 ApiActions.getRequest('https://localhost:44399/api/characters/'
                 +gameid+'/'+difficulty +'/'+role+'/'+subrole , characters => {

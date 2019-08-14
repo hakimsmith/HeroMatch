@@ -208,6 +208,7 @@ namespace HeroMatch
                     Difficulty = 1,
                     Role = 2,
                     SubRole = 1,
+                    Aesthetic = 1,
                     ApiLocation = "https://overwatch-api.net/api/v1/hero/15",
                     Video = "V_0eqEbG7yA"
 
@@ -2758,7 +2759,7 @@ namespace HeroMatch
                     Description = "League of Legends is a fast-paced, competitive online game that blends the speed and intensity of real time strategy with role playing game elements. Two teams of powerful champions, each with a unique design and playstyle, battle head-to-head across multiple battlefields and game modes. With an ever-expanding roster of champions, frequent updates and a thriving tournament scene, League of Legends offers endless replayability for players of every skill level.",
                     Download = "https://signup.na.leagueoflegends.com/en/signup/index#/",
                     Image = "https://www.riotgames.com/darkroom/800/6e3cb0c1ef68c36917c0ebc60e134f69:27e118b555199ad4738eaa74561e3e79/blank-uml-page-2.png",
-                    Video = "-157HBpPZ24"
+                    Video = "BGtROJeMPeE"
                 }
 
                 );

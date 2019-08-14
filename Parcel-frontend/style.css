@@ -114,7 +114,7 @@ img{
 
 .single-char-name{
     grid-column-start: 2;
-    margin-right: 2em;
+    /* margin-right: 2em; */
     margin-bottom: 1em;
     text-align: right;
 }
@@ -160,8 +160,14 @@ img{
 .single-char{
     float: left;
     width: 33.33%;
-    padding: 5px;
-
+    margin: 5px;
+    border: solid 2px lightgrey;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.single-char:hover{
+    background-color: #5be4ad;
+    border: solid 5px lightgrey;
 }
 
 #quiz_body {
@@ -194,7 +200,7 @@ img{
     flex-direction: row;
     flex-wrap: wrap;
 }
-#developers p{
+#developers a{
     
     text-decoration: none;
 }
@@ -445,6 +451,17 @@ img{
     top: 8em;
     right: 6em;
 }
+
+.ow_lore{
+    font-family: 'Josefin-sans', sans-serif;
+    padding-left: 1em;
+    padding-right: 15em;
+    padding-top: 1em;
+    
+    display: grid;
+    grid-template-columns: 1fr 80%;
+}
+
 .ow_textbox, .ow_abilities{
     background: rgba(0,0,0,.7);
     border-radius: 10px;
@@ -558,11 +575,17 @@ img{
     display: flex;
 	top: 1em;  
     width: 80%;  
+    padding-left: 271px;
     font-size: 100px;
 	animation-duration: 12s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 }
+.item1 img{
+    width: 350px;
+    
+}
+
 .item2{
 	position: absolute;
     display: block;
@@ -581,7 +604,7 @@ img{
     margin-left: auto;
     margin-right: auto;
     width: 350px;   
-	top: 3em;  
+	top: 4em;  
     animation-duration: 12s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
@@ -632,14 +655,18 @@ img{
 
 .gameDescription{
     width: 85%;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Josefin Sans', sans-serif;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 20px;
+    border: solid 2px lightgrey;
+
 }
 .iframe{
-    height: 260px;
-    padding-top: 50px;
+    margin-right: 50px;
+    height: auto;
+    border-radius: 10px;
+    border: solid 2px lightgrey;
 }
 .gameimg{
     padding-right: 60px;
@@ -648,38 +675,44 @@ img{
 .image-and-desc{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
 }
-.download{
-    font-family: 'Josefin Sans', sans-serif;
-      margin: 10px;
-      cursor: pointer;
-      position: relative;
-      font-size: 25px;
-      z-index: 0;
-      cursor: pointer;
-      padding: 15px 25px;
-      width: 700px;    
-      border-radius: 5px;
-      background-color: #111;
-      color: lightgrey;
-      border: solid 2px;
-  }
-  
-  .download:hover{
-      color: black;
-      outline: none;
-      background-color: lightgrey;
-      border-color: lightgrey;
-  }
+
+.image-and-desc p{
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 2em;
+}
+
+.image-and-desc img{
+    width: 30%;
+    height: auto;
+}
+
   .random-char{
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       width: auto;
-      padding-bottom: 30px;
+      padding-bottom: 15px;
   }
+
+  .single-button{
+      display: flex;
+      margin-top: 3.5em;
+  }
+  .single-button div{
+      display: grid;
+    grid-gap: 20px;
+  }
+  .single-button a{
+      text-decoration: none;
+  }
+
+  
   .char-all{
     
     display: flex;
@@ -702,17 +735,25 @@ img{
       padding-right:20px;
       
     }
-  .char-all-box{
+    .char-all-box{
 
       display: flex;   
         flex-direction: row;
         flex-wrap: wrap;
-  }
-  .allChar{
+    }
+
+    .allChar{
     display: flex;
     flex-direction: row;
     justify-items: center;
-  }
+    }
 
+    .single-game-button{
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      font-size: 25px;
+    }
+    
 
 

@@ -6,7 +6,6 @@ export default function SingleChar(char, gameid,video,image){
         <img class='ow_single-char' src = ${image}>
         <div class='ow_lore'>
         <h3>${char.name}</h3>
-        <p>Health: ${char.health}</p>
         <p>${char.description}</p>
         </div>
         </div>

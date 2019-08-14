@@ -3,14 +3,16 @@ using HeroMatch;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HeroMatch.Migrations
 {
     [DbContext(typeof(SiteContext))]
-    partial class SiteContextModelSnapshot : ModelSnapshot
+    [Migration("20190814142150_fixedLOLVideoLink")]
+    partial class fixedLOLVideoLink
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -65,7 +67,7 @@ namespace HeroMatch.Migrations
                         new { CharacterId = 10, Aesthetic = 0, ApiLocation = "https://overwatch-api.net/api/v1/hero/8", CharacterUrl = "https://playoverwatch.com/en-us/heroes/mccree/", Difficulty = 2, GameId = 1, Image = "https://d1u1mce87gyfbn.cloudfront.net/hero/mccree/full-portrait.png", Name = "McCree", Role = 2, SmallImage = "https://d1u1mce87gyfbn.cloudfront.net/hero/mccree/hero-select-portrait.png", SubRole = 1, Video = "kq4OlEDiCi8" },
                         new { CharacterId = 11, Aesthetic = 0, ApiLocation = "https://overwatch-api.net/api/v1/hero/5", CharacterUrl = "https://playoverwatch.com/en-us/heroes/hanzo/", Difficulty = 3, GameId = 1, Image = "https://d1u1mce87gyfbn.cloudfront.net/hero/hanzo/full-portrait.png", Name = "Hanzo", Role = 2, SmallImage = "https://d1u1mce87gyfbn.cloudfront.net/hero/hanzo/hero-select-portrait.png", SubRole = 1, Video = "oOVb9x0zd6M" },
                         new { CharacterId = 12, Aesthetic = 0, ApiLocation = "https://overwatch-api.net/api/v1/hero/19", CharacterUrl = "https://playoverwatch.com/en-us/heroes/widowmaker/", Difficulty = 3, GameId = 1, Image = "https://d1u1mce87gyfbn.cloudfront.net/hero/widowmaker/full-portrait.png", Name = "Widowmaker", Role = 2, SmallImage = "https://d1u1mce87gyfbn.cloudfront.net/hero/widowmaker/hero-select-portrait.png", SubRole = 1, Video = "fvPp6XbbTb0" },
-                        new { CharacterId = 13, Aesthetic = 1, ApiLocation = "https://overwatch-api.net/api/v1/hero/15", CharacterUrl = "https://playoverwatch.com/en-us/heroes/soldier-76/", Difficulty = 1, GameId = 1, Image = "https://d1u1mce87gyfbn.cloudfront.net/hero/soldier-76/full-portrait.png", Name = "Soldier: 76", Role = 2, SmallImage = "https://d1u1mce87gyfbn.cloudfront.net/hero/soldier-76/hero-select-portrait.png", SubRole = 1, Video = "V_0eqEbG7yA" },
+                        new { CharacterId = 13, Aesthetic = 0, ApiLocation = "https://overwatch-api.net/api/v1/hero/15", CharacterUrl = "https://playoverwatch.com/en-us/heroes/soldier-76/", Difficulty = 1, GameId = 1, Image = "https://d1u1mce87gyfbn.cloudfront.net/hero/soldier-76/full-portrait.png", Name = "Soldier: 76", Role = 2, SmallImage = "https://d1u1mce87gyfbn.cloudfront.net/hero/soldier-76/hero-select-portrait.png", SubRole = 1, Video = "V_0eqEbG7yA" },
                         new { CharacterId = 14, Aesthetic = 0, ApiLocation = "https://overwatch-api.net/api/v1/hero/12", CharacterUrl = "https://playoverwatch.com/en-us/heroes/reaper/", Difficulty = 1, GameId = 1, Image = "https://d1u1mce87gyfbn.cloudfront.net/hero/reaper/full-portrait.png", Name = "Reaper", Role = 2, SmallImage = "https://d1u1mce87gyfbn.cloudfront.net/hero/reaper/hero-select-portrait.png", SubRole = 2, Video = "uK4WSF0rCcM" },
                         new { CharacterId = 15, Aesthetic = 0, ApiLocation = "https://overwatch-api.net/api/v1/hero/23", CharacterUrl = "https://playoverwatch.com/en-us/heroes/sombra/", Difficulty = 3, GameId = 1, Image = "https://d1u1mce87gyfbn.cloudfront.net/hero/sombra/full-portrait.png", Name = "Sombra", Role = 2, SmallImage = "https://d1u1mce87gyfbn.cloudfront.net/hero/sombra/hero-select-portrait.png", SubRole = 2, Video = "bcrPuSRYA4U" },
                         new { CharacterId = 16, Aesthetic = 0, ApiLocation = "https://overwatch-api.net/api/v1/hero/4", CharacterUrl = "https://playoverwatch.com/en-us/heroes/genji/", Difficulty = 3, GameId = 1, Image = "https://d1u1mce87gyfbn.cloudfront.net/hero/genji/full-portrait.png", Name = "Genji", Role = 2, SmallImage = "https://d1u1mce87gyfbn.cloudfront.net/hero/genji/hero-select-portrait.png", SubRole = 2, Video = "lYOjIDhJIG0" },

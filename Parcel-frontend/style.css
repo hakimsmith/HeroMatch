@@ -4,6 +4,11 @@
     margin: 0;
     padding: 0;
 } 
+
+a{
+    text-decoration: none;
+}
+
 nav ul{
     position: fixed;
     top: 0;
@@ -53,6 +58,7 @@ body {
     color: #fff;
     padding: 2em;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 #about, #quiz {
@@ -102,25 +108,30 @@ img{
 .char-single-result{
     padding-top: 2em;
     display: grid;
-    grid-template-columns: 1fr 80%;
+    grid-template-columns: 1fr 60%;
     grid-template-rows: 1fr 10%;
     border-radius: 20px;
     background-color: rgba(0,0,0,.7);
+    padding-bottom: 2em;
 }
 
-.char-single-result h2{
-    margin-left: 1em;
-}
 
 .single-char-name{
-    grid-column-start: 2;
-    /* margin-right: 2em; */
-    margin-bottom: 1em;
-    text-align: right;
+    margin-left: 1em;
+    text-align: left;
+    font-family: 'Josefin-sans', sans-serif;
+}
+.char-blurb{
+    margin-left: 2em;
+    margin-top: 2em;
+    font-family: 'Josefin-sans', sans-serif;
+    font-size: 20px;
+    line-height: 2em;
 }
 
 .char-single-result img{
-    width:70%;
+    width: auto;
+    height: 400px;
     border-radius: 10px;
     padding: 0;
     cursor: pointer;
@@ -132,6 +143,7 @@ img{
 .char-results{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .char-other-result{
@@ -151,6 +163,11 @@ img{
     justify-items: center;
 
 }
+.single-char-info{
+    display: flex;
+    flex-direction: column;
+}
+
 .imgNameOther{
     display: flex;
     flex-direction: column;
@@ -164,6 +181,7 @@ img{
     border: solid 2px lightgrey;
     border-radius: 5px;
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 .single-char:hover{
     background-color: #5be4ad;
@@ -258,12 +276,17 @@ img{
     border-top-right-radius: 16px;
 }
 
+.QuestionSeparator{
+    padding-top: 3em;
+}
+
 
 .entireQuestionBox{
     background-color: transparent;
     border-radius: 16px;
     width: 100%;
     max-height: 300px;
+    scroll-behavior: smooth;
 }
 
 .Question_Container{
@@ -275,16 +298,24 @@ img{
 
 .Question_Choices {
     padding: 0 10px;
-    max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    /* background-color: rgba(0, 0, 0, 0.5);   */
     outline: none;
     display: flex;
     flex-flow: column;  
     align-items: center;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
+}
+
+.Question_Choices a{
+    text-decoration: none;
+}
+
+#subroleOptions p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    font-style: italic;
 }
 
 .quiz-button{
@@ -296,14 +327,12 @@ img{
     z-index: 0;
     cursor: pointer;
     padding: 15px 25px;
-    width: 700px;    
+    width: 640px;    
     border-radius: 5px;
     background-color: #111;
     color: lightgrey;
     border: solid 2px;
-
-    display: flex;
-    
+    display: flex;    
 }
 
 .take-quiz{
@@ -349,7 +378,8 @@ img{
 }
 
 .quiz-button img{
-    width: 100px;
+    width: auto;
+    height: 100px;
     filter: invert(100%)
 }
 
@@ -374,11 +404,16 @@ img{
 }
 
 #submit {
+    margin: 0 auto;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .submit-button {
     width: 20%;
+    display: flex;
+    justify-content: center;
 }
 
 .games {
@@ -561,7 +596,16 @@ img{
 .buttons{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-top: 2em;
+}
+
+.buttons a{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons a button{
+    width: 50%;
 }
 
 .allChar, .switch-game{

@@ -5,6 +5,7 @@ export default function AllChars(game){
     ${game.character.map (singlechar => {
         return `
         <div class='char-all-box'>
+            <div class='allChar'>
             <div class='imageAndName'>
             <img class='single-char' src=${singlechar.smallImage}>            
             <p class='single-char-name'>${singlechar.name}</p>
@@ -13,7 +14,9 @@ export default function AllChars(game){
             <input class='apiLocation' value=${singlechar.apiLocation} type='hidden'>
             <input class='video' value=${singlechar.video} type = 'hidden'>
             <input class='image' value=${singlechar.image} type ='hidden'>
+            </div>
         </div>
+
         `
     }).join("")}
     </div>

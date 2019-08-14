@@ -143,7 +143,7 @@ img{
 .char-results{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .char-other-result{
@@ -181,6 +181,7 @@ img{
     border: solid 2px lightgrey;
     border-radius: 5px;
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 .single-char:hover{
     background-color: #5be4ad;

@@ -176,6 +176,8 @@ img{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.5em;
     margin: 20px;
+    color: white;
+    text-decoration: none;
 }
 
 .about{
@@ -183,13 +185,22 @@ img{
     flex-direction: column;
     align-items: center;
     padding-top: 2em;
-    
+    padding-bottom: 3em;
+    text-decoration: none;
 }
 
 #developers{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+#developers p{
+    
+    text-decoration: none;
+}
+#developers p:hover{
+    color: #5be4ad;
+    cursor: pointer;
 }
 
 #aboutTheGame{
@@ -577,7 +588,7 @@ img{
 }
 
 @keyframes anim-3 {
-	0%, 26% { left: -100%; opacity: 0; }
+	0%, 60% { left: -100%; opacity: 0; }
   74.96%, 91.62% { left: 35%; opacity: 1; }
   100% { left: 110%; opacity: 0; }
 }

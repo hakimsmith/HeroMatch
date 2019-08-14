@@ -17,17 +17,17 @@ export default function About(){
 <div id="devName">
 <h2 id="devTitle">Developers:</h2>
 <div id="developers">
-        <p> Angel Davis</p>
+        <a href="https://github.com/Angel-TheDev" target="_blank"><p> Angel Davis</p></a>
         </br>
-        <p> Megan Denman </p>
+        <a href="https://github.com/mega24cde" target="_blank"><p>  Megan Denman</p></a>
         </br>     
-        <p> Aaron Ferguson </p>
+        <a href="https://github.com/AJ-Ferguson123" target="_blank"><p>Aaron Ferguson</p></a>
         </br>     
-        <p> Blair Griffith </p>
+        <a href="https://github.com/blairgriffith" target="_blank"><p>Blair Griffith</p></a>
         </br>     
-        <p> Sergio Rodriguez</p>
+        <a href="https://github.com/Sergior15" target="_blank"><p>Sergio Rodriguez</p></a>
         </br>     
-        <p> Hakim Smith </p>
+        <a href="https://github.com/hakimsmith" target="_blank"><p>Hakim Smith</p></a>
     </div>
    </div>
 </div>    

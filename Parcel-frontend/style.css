@@ -619,18 +619,45 @@ img{
     display: flex;
 	top: 1em;  
     width: 80%;  
-    padding-left: 271px;
+    padding-left: 304px;
     font-size: 100px;
 	animation-duration: 12s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 }
-.item1 img{
+.item4{
+	position: absolute;
+    display: flex;
+	top: 1em;  
+    width: 80%;  
+    padding-left: 304px;
+    font-size: 100px;
+	animation-duration: 12s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+/* .item1 img{
     width: 350px;
     
 }
+.item4 img{
+    width: 350px;
+    
+} */
 
 .item2{
+	position: absolute;
+    display: block;
+    text-align: left;
+    right: 100px; 
+    top: 3em;  
+    width: 100%;  
+    font-size: 4em;
+	animation-duration: 12s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+.item5{
 	position: absolute;
     display: block;
     text-align: left;
@@ -653,6 +680,17 @@ img{
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 }
+.item6{
+    position: absolute;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;   
+	top: 4em;  
+    animation-duration: 12s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
 
 .item1{
 	animation-name: anim-1;
@@ -664,6 +702,16 @@ img{
 .item3{
 	animation-name: anim-3;
 }
+.item4{
+	animation-name: anim-4;
+}
+
+.item5{
+	animation-name: anim-5;
+}
+.item6{
+	animation-name: anim-6;
+}
 
 
 @keyframes anim-1 {
@@ -673,14 +721,31 @@ img{
 }
 
 @keyframes anim-2 {
-	0%, 33.33% { left: -100%; opacity: 0; }
+	0.1%, 33.33% { left: -100%; opacity: 0; }
   41.63%, 58.29% { left: 18%; opacity: 1; }
   66.66%, 100% { left: 110%; opacity: 0; }
 }
 
 @keyframes anim-3 {
 	0%, 60% { left: -100%; opacity: 0; }
-  74.96%, 91.62% { left: 35%; opacity: 1; }
+  74.96%, 91.62% { left: 10%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+@keyframes anim-4 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 17%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-5 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 18%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-6 {
+	0%, 60% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 60%; opacity: 1; }
   100% { left: 110%; opacity: 0; }
 }
 

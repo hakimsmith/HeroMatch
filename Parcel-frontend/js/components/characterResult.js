@@ -29,8 +29,10 @@ export default function CharacterResult(characters, aesthetic){
         return `
         <div class='char-other-result'>
             <div class="single-char-group">
+                <div class="imgNameOther">
                 <img class='single-char' src=${character.smallImage}>                      
                 <p class='single-char-name'>${character.name}</p>
+                </div>
                 <input class='gameid' value=${character.gameId} type='hidden'>
                 <input class='apiLocation' value=${character.apiLocation} type='hidden'>
                 <input class='video' value=${character.video} type = 'hidden'>

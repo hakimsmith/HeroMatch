@@ -35,7 +35,16 @@ function home(){
         document.getElementById('quiz').innerHTML = Home(home);
         })
     });
+
+    document.getElementById('quiz').addEventListener('click', function() {
+        if(event.target.classList.contains('take-quiz')){
+            apiActions.getRequest('https://localhost:44399/api/game', games =>{
+            document.getElementById('quiz').innerHTML = TakeQuiz(games);
+        });
+        }
+    })
 };
+
 function about(){
     const about = document.getElementById('nav_about');
     about.addEventListener('click', function(){
@@ -73,6 +82,13 @@ function singleGame(){
 function takeQuiz(){
     const quiz = document.getElementById('nav_quiz');
     quiz.addEventListener('click', function(){
+        apiActions.getRequest('https://localhost:44399/api/game', games =>{
+        document.getElementById('quiz').innerHTML = TakeQuiz(games);
+
+        })
+    });
+    const bodyquiz = document.getElementById('body_quiz');
+    bodyquiz.addEventListener('click', function(){
         apiActions.getRequest('https://localhost:44399/api/game', games =>{
         document.getElementById('quiz').innerHTML = TakeQuiz(games);
 

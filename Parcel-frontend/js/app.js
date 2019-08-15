@@ -204,33 +204,38 @@ function characterQuiz() {
         let response = document.querySelectorAll(".quiz-button")
         for (let i = 0; i < response.length; i++) {
             response[i].addEventListener("click", function () {
-                //on click of an opt The Container gets a class of  hiding and removes a class of showing then we want-other way around lol
-                console.log(this.id);
                 const questionNumAsString = this.id.charAt(3);
                 //charAt treats a char as a string and gives you the index of the char at that location
-            //    console.log('we just clicked the ans to quest', questionNumAsString);
 
-                const currentElement = document.querySelector('#answerHolder' + questionNumAsString);
+                let currentElement = document.querySelector('#answerHolder' + questionNumAsString);
 
+                if (!currentElement) {
+                    currentElement = document.querySelector('#subroleOptions')  
+                }
                 if (currentElement.style.maxHeight) {
                     currentElement.style.maxHeight = null;
                 } else {
-                    currentElement.style.maxHeight = currentElement.scrollHeight + "px";
+                    //: then do this
+                    currentElement.style.maxHeight = currentElement.scrollHeight > 200 ? currentElement.scrollHeight + "px" : '402px';
+                    console.log(currentElement.scrollHeight)
                 }
 
                 const questionNum = parseInt(questionNumAsString);
                 const nextQuestionNum = questionNum + 1; 
                 const nextQuestAnsHolder = 'answerHolder' + nextQuestionNum;
-                const nextElement = document.querySelector('#' + nextQuestAnsHolder)
-                console.log(nextElement)
-                if (nextElement === undefined) {
-                    nextElement = document.querySelector('#subroleOptions')
+                let nextElement = document.querySelector('#' + nextQuestAnsHolder)
+                console.log('the value of next element is ', nextElement)
+                
+                if (!nextElement && questionNum !== 4) {
+                    nextElement = document.querySelector('#subroleOptions')  
                 }
                 console.log(nextElement)
+                debugger
                 if (nextElement.style.maxHeight) {
                     nextElement.style.maxHeight = null;
                 } else {
-                    nextElement.style.maxHeight = nextElement.scrollHeight + "px";
+                    nextElement.style.maxHeight = nextElement.scrollHeight > 200 ? nextElement.scrollHeight + "px" : '402px';
+                    console.log(nextElement.scrollHeight)
                 }
 
 

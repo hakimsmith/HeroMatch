@@ -7,7 +7,7 @@ export default function CharacterResult(characters, aesthetic){
         return a.aesthetic - b.aesthetic
     })
     return `
-    <h1 class='result-head'>Your HeroMatch</h1>
+    <h1 class='result-head' id='result-head'>Your HeroMatch</h1>
     <br />
     <div class = "char-results">
     ${characters.map(character =>{

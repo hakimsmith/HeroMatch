@@ -4,6 +4,7 @@ export default function SubroleOptions(role){
         <a href="#QuestionHead4">
             <button class='quiz-button subRoleOption' value='1'><img src="https://i.imgur.com/ogHhroG.png">&nbsp; Controlling the flow of the game by inhibiting my opponent(s) actions.</button>
         </a>
+        <a href="#QuestionHead4">
             <button class='quiz-button subRoleOption' value='2'><img src="https://i.imgur.com/9a17yBu.png">&nbsp; Creating opportunies by capitalizing on my enemies mistakes.</button>
         </a>
         `

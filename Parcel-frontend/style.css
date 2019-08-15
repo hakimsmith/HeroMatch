@@ -70,9 +70,7 @@ nav ul {
     
     font-size: 25px;
     justify-content: space-around;
-    /* background-image:(#92dcbe #4c7062);  
-    /*background: linear-gradient(to bottom, #222, #a1cfbea1 100%);    */
-     background: #222;    
+    background: #222;    
     top: 0;
     left: 0;
     width: 100%;
@@ -147,7 +145,6 @@ img{
 }
 
 .char-other-result{
-    /* padding-top: 1em; */
     display: flex;   
     flex-direction: row;
     flex-wrap: wrap;
@@ -385,7 +382,6 @@ img{
 
 .quiz {
     color: white;
-    /* background-color: black; */
     width: 100px;
     height: 50px;
     border-radius: 16px;
@@ -441,7 +437,6 @@ img{
     background: rgba(0,0,0,.7);
     border-radius: 10px;
     padding: 2em;
-    /* box-shadow: 0px 0px 10px 10px #111; */
 }
 .main-flex img{
     width: 400px;
@@ -590,8 +585,7 @@ img{
     border: solid #fff;
     border-radius: 10px;
     background: rgba(0,0,0,.5);
-}
-    
+} 
 
 .buttons{
     display: flex;
@@ -636,14 +630,6 @@ img{
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 }
-/* .item1 img{
-    width: 350px;
-    
-}
-.item4 img{
-    width: 350px;
-    
-} */
 
 .item2{
 	position: absolute;
@@ -681,6 +667,28 @@ img{
 	animation-iteration-count: infinite;
 }
 .item6{
+    position: absolute;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;   
+	top: 4em;  
+    animation-duration: 12s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+.item7{
+    position: absolute;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;   
+	top: 4em;  
+    animation-duration: 12s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+.item8{
     position: absolute;
     display: block; 
     margin-left: auto;
@@ -712,6 +720,12 @@ img{
 .item6{
 	animation-name: anim-6;
 }
+.item7{
+	animation-name: anim-7;
+}
+.item8{
+	animation-name: anim-8;
+}
 
 
 @keyframes anim-1 {
@@ -728,7 +742,7 @@ img{
 
 @keyframes anim-3 {
 	0%, 60% { left: -100%; opacity: 0; }
-  74.96%, 91.62% { left: 10%; opacity: 1; }
+  74.96%, 91.62% { left: 30%; opacity: 1; }
   100% { left: 110%; opacity: 0; }
 }
 @keyframes anim-4 {
@@ -745,9 +759,21 @@ img{
 
 @keyframes anim-6 {
 	0%, 60% { left: -100%; opacity: 0; }
-  74.96%, 91.62% { left: 60%; opacity: 1; }
+  74.96%, 91.62% { left: 2%; opacity: 1; }
   100% { left: 110%; opacity: 0; }
 }
+@keyframes anim-7 {
+	0%, 60% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 50%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+@keyframes anim-8 {
+	0%, 60% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 75%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+
+
 
 .slider-button{
     display: flex;

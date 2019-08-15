@@ -638,8 +638,8 @@ img{
 	position: absolute;
     display: block;
     text-align: left;
-    right: 100px; 
-    top: 3em;  
+    right: 100px;    
+    top: 1em;   
     width: 100%;  
     font-size: 4em;
 	animation-duration: 12s;
@@ -651,7 +651,7 @@ img{
     display: block;
     text-align: left;
     right: 100px; 
-    top: 3em;  
+    top: 1em; 
     width: 100%;  
     font-size: 4em;
 	animation-duration: 12s;
@@ -663,8 +663,8 @@ img{
     display: block; 
     margin-left: auto;
     margin-right: auto;
-    width: 350px;   
-	top: 4em;  
+    height: 400px;   
+	top: 10em;  
     animation-duration: 12s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
@@ -675,7 +675,7 @@ img{
     margin-left: auto;
     margin-right: auto;
     width: 350px;   
-	top: 4em;  
+	top: 7em;  
     animation-duration: 12s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
@@ -686,7 +686,7 @@ img{
     margin-left: auto;
     margin-right: auto;
     width: 500px;   
-	top: 4em;  
+	top:12em;  
     animation-duration: 12s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
@@ -697,7 +697,7 @@ img{
     margin-left: auto;
     margin-right: auto;
     width: 350px;   
-	top: 4em;  
+	top: 7em;   
     animation-duration: 12s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
@@ -744,9 +744,9 @@ img{
 }
 
 @keyframes anim-3 {
-	0%, 60% { left: -100%; opacity: 0; }
-  74.96%, 91.62% { left: 30%; opacity: 1; }
-  100% { left: 110%; opacity: 0; }
+	0.1%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 38%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
 }
 @keyframes anim-4 {
 	0%, 8.3% { left: -100%; opacity: 0; }
@@ -767,12 +767,12 @@ img{
 }
 @keyframes anim-7 {
 	0%, 60% { left: -100%; opacity: 0; }
-  74.96%, 91.62% { left: 50%; opacity: 1; }
+  74.96%, 91.62% { left: 28%; opacity: 1; }
   100% { left: 110%; opacity: 0; }
 }
 @keyframes anim-8 {
 	0%, 60% { left: -100%; opacity: 0; }
-  74.96%, 91.62% { left: 75%; opacity: 1; }
+  74.96%, 91.62% { left: 72%; opacity: 1; }
   100% { left: 110%; opacity: 0; }
 }
 

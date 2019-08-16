@@ -620,8 +620,10 @@ img{
     font-size: 100px;
 	animation-duration: 12s;
 	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
+
+
 .item4{
 	position: absolute;
     display: flex;
@@ -633,6 +635,11 @@ img{
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 }
+
+.item1 img, .item4 img{
+    width: 350px;
+}
+
 
 .item2{
 	position: absolute;
@@ -733,7 +740,7 @@ img{
 
 @keyframes anim-1 {
 	0%, 8.3% { left: -100%; opacity: 0; }
-  8.3%,25% { left: 17%; opacity: 1; }
+  8.3%,25% { left: 15%; opacity: 1; }
   33.33%, 100% { left: 110%; opacity: 0; }
 }
 
@@ -750,7 +757,7 @@ img{
 }
 @keyframes anim-4 {
 	0%, 8.3% { left: -100%; opacity: 0; }
-  8.3%,25% { left: 17%; opacity: 1; }
+  8.3%,25% { left: 15%; opacity: 1; }
   33.33%, 100% { left: 110%; opacity: 0; }
 }
 
